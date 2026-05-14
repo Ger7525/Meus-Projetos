@@ -1,0 +1,38 @@
+.cormorant-infant-<uniquifier> {
+  font-family: "Cormorant Infant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* Todos os elementos recebem margin e padding 0 */
+/* box-sizing: tamanho=tamanho do conteúdo+bordas */
+/* Fonte Heebo configurada em todos os elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'cormorant infant', sans-serif;
+}
+/* Todo o conteúdo de body se limitará a 80% da página */
+/* Margin sup/inf em 0 e automática nas bordas dir/esq*/
+body{
+    width: 80%;
+    margin: 0 auto;
+     background-image: linear-gradient(to right, #85A653, #D1D9B4);
+   
+}
+
+
+/* Cria itens separados de menu, cada um ao centro com espaço de 25px em inf/sup */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content */
+.logo{
+    width: center;
+     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0;
+
+}
+ .logo{   width: 100%;
+}
+

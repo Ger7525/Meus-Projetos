@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+                    <link rel="stylesheet" href="../style/style.css">
+                    <title>Loja | Da Terra Ervas Medicinais</title>
+                    <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      width: 80%;
+    margin: 0 auto;
+     background-image: linear-gradient(to right, #85A653, #D1D9B4);
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:30px;
+      color: #284005;
+    }
+
+    .container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+      gap:20px;
+    }
+
+    .produto{
+      background-color:white
+;
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .produto:hover{
+      transform:translateY(-5px);
+    }
+
+    .produto img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+      display:block;
+    }
+
+    .info{
+      padding:15px;
+      text-align:center;
+    }
+
+    .info h2{
+      font-size:18px;
+      margin-bottom:12px;
+      color: #284005;
+;
+    }
+
+    .info button{
+      background-color: #284005;
+;
+      color:#fff;
+      border:none;
+      padding:10px 18px;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+      font-size:15px;
+    }
+
+    .info button:hover{
+      background:#8C0962;
+    }
+
+    .carrinho{
+      position:fixed;
+      top:20px;
+      right:20px;
+      background:#222;
+      color:#fff;
+      padding:12px 18px;
+      border-radius:10px;
+      font-size:16px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+      <nav class="navbar">
+               
+               <div class="logo">
+                    <img src="../img/logo.png" alt="logo"
+               </div>
+               <div class="links">
+                    <ul>
+                          <li><a href="../index.html">Home</a></li>
+                          <li><a href="pag3.html">Sobre Nós</a></li>
+                          <li><a href="#">Carrinho (o)</a></li>
+                                    
+                    </ul>
+               </div>
+      </nav>
+
+  <div class="carrinho">
+    🛒 Carrinho: <span id="contador">0</span>
+  </div>
+
+  <div class="container">
+
+    <!-- PRODUTO 1 -->
+    <div class="produto">
+      <img src="../img/catalogo/01.jpg" alt="Produto 1">
+      <div class="info">
+        <h2>Chá de Camomila</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 2 -->
+    <div class="produto">
+      <img src="../img/catalogo/02.jpg" alt="Produto 2">
+      <div class="info">
+        <h2>Chá de Hortelã</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 3 -->
+    <div class="produto">
+      <img src="../img/catalogo/03.jpg" alt="Produto 3">
+      <div class="info">
+        <h2>Chá de Capin-limão e Alecrim</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 4 -->
+    <div class="produto">
+      <img src="../img/catalogo/04.jpg" alt="Produto 4">
+      <div class="info">
+        <h2>Xarope de Guaco</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 5 -->
+    <div class="produto">
+      <img src="../img/catalogo/05.jpg" alt="Produto 5">
+      <div class="info">
+        <h2>Mix de Ervas, Energia Vital</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 6 -->
+    <div class="produto">
+      <img src="../img/catalogo/06.jpg" alt="Produto 6">
+      <div class="info">
+        <h2>Blend de Fores, Calêndula e Anis-Estrelado </h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 7 -->
+    <div class="produto">
+      <img src="../img/catalogo/07.jpg" alt="Produto 7">
+      <div class="info">
+        <h2>Chá de Sálvia e Camomila</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 8 -->
+    <div class="produto">
+      <img src="../img/catalogo/08.jpg" alt="Produto 8">
+      <div class="info">
+        <h2>Chá de Mulungu</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 9 -->
+    <div class="produto">
+      <img src="../img/catalogo/10.jpg" alt="Produto 9">
+      <div class="info">
+        <h2>Chá Misto de infusão da Calma</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 10 -->
+    <div class="produto">
+      <img src="../img/catalogo/11.jpg" alt="Produto 10">
+      <div class="info">
+        <h2>Máscara Facial de Argila Verde e Chá verde</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 11 -->
+    <div class="produto">
+      <img src="../img/catalogo/12.jpg" alt="Produto 11">
+      <div class="info">
+        <h2>Máscara Facial de Argila Verde e Chá verde</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 12 -->
+    <div class="produto">
+      <img src="../img/catalogo/13.jpg" alt="Produto 12">
+      <div class="info">
+        <h2>Kit Detox Facial</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 13 -->
+    <div class="produto">
+      <img src="../img/catalogo/14.jpg" alt="Produto 13">
+      <div class="info">
+        <h2>Óleo de Cuidado Facial</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 14 -->
+    <div class="produto">
+      <img src="../img/catalogo/15.jpg" alt="Produto 14">
+      <div class="info">
+        <h2>Sabonete em Barra Vegano</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 15 -->
+    <div class="produto">
+      <img src="../img/catalogo/16.jpg" alt="Produto 15">
+      <div class="info">
+        <h2>Nome do Produto 15</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <!-- PRODUTO 16 -->
+    <div class="produto">
+      <img src="../img/catalogo/18.jpg" alt="Produto 16">
+      <div class="info">
+        <h2>Chá Misto Infusão e Foco</h2>
+        <button onclick="adicionarCarrinho()">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    
+  </div>
+   <script>
+    let contador = 0;
+
+    function adicionarCarrinho() {
+      contador++;
+      document.getElementById("contador").innerText = contador;
+    }
+  </script>
+
+</body>
+</html>
