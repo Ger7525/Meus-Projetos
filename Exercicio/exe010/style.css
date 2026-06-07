@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;                  
+}
+body{
+   background-color: rgb(241, 233, 233);                 
+}
+h1{
+  padding-top: 40px;
+  padding-bottom: 10px; 
+  text-align: center;                 
+}
+.container{
+   width: 800px;
+   margin: 0 auto;                 
+}
+.box{
+   border: 1px solid silver;
+   border-radius: 5px 5px 5px 5px ; 
+   margin: 20px;
+   background-color: white;                
+}
+.box h2{
+    padding: 10px;                
+}
+.box p{
+   padding: 10px;
+   text-align: justify;                 
+}
+.box nav{
+   padding: 20px;
+   text-align: center;                 
+}
+.box > nav > a{
+    color: rgb(13, 156, 149);                
+}
+footer{
+   margin: 20px;    
+   text-align: center;             
+}
+footer p{
+    font-size: 10px;
+    color: rgb(172, 166, 166);                
+}

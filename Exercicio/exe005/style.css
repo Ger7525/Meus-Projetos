@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;                  
+}
+  
+               
+
+header{
+      text-align: center;              
+}
+header h1{
+       margin: 40px 20px 20px 20px; 
+       font-size: 35px;            
+}
+.container-1{
+     border: 1px solid black;
+     width: 800px;
+     height: 100px; 
+     margin: 10px auto;           
+}
+.box-1 p{
+    text-align: justify;
+    padding: 20px; 
+    font-size: 20px;               
+}
+.container-2{
+    display: flex;
+     
+                    
+}
+.box-2{
+    border: 1px solid black;
+     width: 300px;
+     height: 150px;
+    
+     margin: 10px;                
+}
+.box-2 h2{
+     text-align: center;
+     padding: 15px;               
+}
+.box-2 p{
+     text-align: justify;
+     padding: 10px;               
+}
+footer{
+     text-align: center;
+
+}
+footer p{
+    color: silver;                
+}
+footer > p > a{
+    color: silver;
+    text-decoration: none;                
+}
+footer > p > a:hover{
+    color:black;
+    text-decoration: underline;                
+}

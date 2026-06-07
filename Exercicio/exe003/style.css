@@ -1,0 +1,48 @@
+*{
+ margin: 0;
+ padding: 0;                   
+}
+header{
+      text-align: center;
+      color: rgb(115, 161, 146);
+                    
+}
+header > h1{
+      font-size: 3em;
+      padding: 30px 30px 5px 30px             
+}
+header > p{
+      font-size: 1em;
+      padding-bottom: 30px; 
+      padding-top: 5px;
+}
+.container{
+      display: flex;
+      justify-content: center;              
+}
+.block{
+    border: 2px solid blue;
+    width: 350px; 
+    margin: 10px;               
+}
+.block > h2{
+     text-align: center;
+     padding: 10px;               
+}
+.block > p{
+     text-align: justify;
+     padding: 10px;               
+}
+footer{
+    text-align: center;
+    margin: 3px; 
+    color: rgba(145, 139, 130, 0.897);               
+}
+footer > p > a{
+    color: rgba(145, 139, 130, 0.897); 
+    text-decoration: none;                 
+}
+footer > p > a:hover{
+    color: black;
+    text-decoration: underline;                
+}

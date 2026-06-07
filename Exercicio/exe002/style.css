@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;                  
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    height: auto;               
+}
+.container{
+    display: flex;  
+    text-align: center; 
+    justify-content: center;  
+    margin: 10px 10px;           
+}
+.bloco{
+    background-color: antiquewhite;
+    width: 400px;
+    border: 2px solid blue; 
+    margin: 5px;
+
+}
+h1{
+   text-align: center;  
+   margin: 30px;               
+}
+.bloco > h2{
+    padding: 10px; 
+    text-align: left;               
+}
+.bloco > p{
+    padding: 10px;  
+    text-align: justify;              
+}
+footer{
+    text-align: center;
+    color: rgb(112, 99, 81);                
+}
+footer > p > a{
+     text-decoration: none; 
+     color:rgb(112, 99, 81);               
+}
+footer > p > a:hover{
+    text-decoration: underline;            
+}

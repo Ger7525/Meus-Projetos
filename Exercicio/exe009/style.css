@@ -1,0 +1,39 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+.container{
+    width: 800px;
+    margin: 0 auto;                
+}
+.box{
+    border: 1px solid gainsboro;   
+    background-color: rgba(220, 220, 220, 0.253);
+    margin-top: 10px;
+    margin-bottom: 15px; 
+    border-radius: 5px 5px 5px 5px;            
+}
+.box h2{
+     padding: 20px;               
+}
+.box p{
+     padding: 10px 20px;
+     text-align: justify;               
+}
+.box nav{
+     text-align: right;   
+     padding: 30px;            
+}
+.box > nav > a{
+      border: 1px solid rgb(21, 21, 216); 
+      padding: 10px; 
+      border-radius: 5px 5px 5px 5px;
+      background-color:rgb(75, 75, 209); 
+      color:white;
+      font-size: 16px; 
+      text-decoration: none;          
+}
+.box > nav > a:hover{
+      background-color: rgb(21, 21, 216); ;              
+}

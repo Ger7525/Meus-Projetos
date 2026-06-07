@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 600px;
+                    margin: 0 auto;
+}
+h1{
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+div{
+  border: 1px solid rgba(150, 150, 170, 0.555);
+
+}
+div p{
+  padding: 10px;
+  text-align: justify;
+}
+div > p > a{
+  color: blue;
+  text-decoration: none;
+}
+div > p > a:hover{
+  text-decoration: underline;
+}
+footer{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
