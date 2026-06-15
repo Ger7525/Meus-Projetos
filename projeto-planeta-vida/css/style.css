@@ -14,7 +14,7 @@
 
 }
 body{
-   background: linear-gradient( to right,#1B4332 0%, #2D6A4F 40%, #40916C 100%);                 
+   background: linear-gradient( to right, #2D6A4F 40%, transparent);                 
 }
 header{
   margin: 0 auto;
@@ -28,10 +28,184 @@ nav a{
     color: #F8F5E9;
     transition: .3s;
     font-size: 24px;
+    text-align: center;
    
 }
 
 nav a:hover{
     color: #F2D16B;
     font-size: 25px;
+}
+.conteudo-principal{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.secao{
+    margin-bottom:60px;
+}
+
+.secao h2{
+    color:#1B4332;
+    border-left:6px solid #D4AF37;
+    padding-left:15px;
+    margin-bottom:25px;
+    font-size:2rem;
+}
+
+/* CALENDÁRIO */
+
+.box-calendario{
+    display:flex;
+    gap:30px;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.box-calendario img{
+    width:50%;
+    object-fit:cover;
+}
+
+.info-reuniao{
+    padding:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.info-reuniao h3{
+    color:#1B4332;
+    margin-bottom:15px;
+}
+
+.btn{
+    margin-top:20px;
+    display:inline-block;
+    background:#D4AF37;
+    color:#1B4332;
+    padding:12px 20px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* GALERIA DE REUNIÕES */
+
+.box-calendario img{
+    width: 300px;
+    height: auto;
+}
+.galeria-reunioes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card-foto{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-foto:hover{
+    transform:translateY(-8px);
+}
+
+.card-foto img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-foto p{
+    padding:15px;
+    text-align:center;
+    font-weight:bold;
+    color:#2D6A4F;
+}
+
+/* GALERIA DA FAMA */
+
+.galeria-fama{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card-homenagem{
+    text-align:center;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    border-top:5px solid #D4AF37;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.card-homenagem img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #D4AF37;
+    margin-bottom:15px;
+}
+
+.card-homenagem h3{
+    color:#1B4332;
+    margin-bottom:10px;
+}
+
+.card-homenagem p{
+    color:#666;
+}
+.box-homenagens{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.homenagem-item{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    border-left:6px solid #D4AF37;
+    transition:.3s;
+}
+
+.homenagem-item:hover{
+    transform:translateY(-5px);
+}
+
+.homenagem-item img{
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #D4AF37;
+}
+
+.homenagem-texto{
+    flex:1;
+}
+
+.homenagem-texto h3{
+    color:#1B4332;
+    margin-bottom:10px;
+    font-size:1.4rem;
+}
+
+.homenagem-texto p{
+    color:#555;
+    line-height:1.7;
 }
