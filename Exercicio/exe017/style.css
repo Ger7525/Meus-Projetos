@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;                  
+}
+header{
+  text-align: center;
+  padding: 30px 0px;
+}
+main{
+  width: 1000px;
+  margin: 0px auto;
+  text-align: center;
+}
+section{
+  display: flex;
+}
+article{
+  width: 320px;
+  border: 1px solid rgb(187, 245, 245);
+  margin: 10px;
+  background-color: rgba(240, 255, 255, 0.596);
+}
+article h3{
+  padding: 10px;
+  font-size: 20px;
+}
+article p{
+  padding: 10px;
+  font-size: 16px;
+}

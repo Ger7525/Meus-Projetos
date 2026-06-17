@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+:root{
+      --cor0: #4a6fa5; /*cabeçalho e rodapé*/
+      --cor1: white; /*texto em destaque*/
+      --cor2: #fff9f9; /*caixa*/
+      --cor3: #ffd6d6; /* cor de borda */
+      --cor4: #666; /*texto h3*/
+      --cor5: #e63946;  /*botão Clicavel */ 
+      
+      --font1:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*fonte da caixa */
+      --font2: Arial, Helvetica, sans-serif; /* fonte principal */
+}
+*{
+  margin: 0;
+  padding: 0; 
+  font-family: var(--font2);
+}
+header{
+  background-color: var(--cor0);
+  color: var(--cor1);
+  padding: 10px;  
+  text-align: center;                
+}
+header h1{
+   padding: 10px;
+   font-size: 30px;
+                    
+}
+header p{
+  padding-bottom: 10px;
+  font-size: 18px;                  
+}
+main{
+   max-width: 1000px; 
+   margin: 0px auto;
+   margin-top: 35px;                
+}
+.container{
+   text-align: center;
+   display:flex ;
+                   
+}
+.block{
+   background-color: var(--cor2);
+   border: 1px solid var(--cor3);
+   width: 320px;  
+   margin-left: 20px;
+   margin-top: 15px;               
+}
+.block h3{
+   color: black;
+   padding: 20px;                 
+}
+.block p{
+   color: #666;
+   text-align: justify;  
+   padding: 0 15px;               
+}
+#valor{
+   color: var(--cor5);
+   text-align: center;
+   margin-top: 10px;
+   font-weight: bold;                 
+}
+article{
+   margin: 10px;                 
+}
+article button{
+   background-color: var(--cor5);
+   border: 1px solid var(--cor5);
+   border-radius: 5px;
+   width:100%;                 
+   padding-top: 10px;
+   padding-bottom: 10px; 
+   color: var(--cor2);                
+}
+article button:hover{
+   background-color:#c1121f;;                 
+}
+footer{
+     background-color: var(--cor0);
+     text-align: center;
+     color: var(--cor1);
+     padding: 40px;
+     margin-top: 40px;
+     font-size: 14px;
+
+}
