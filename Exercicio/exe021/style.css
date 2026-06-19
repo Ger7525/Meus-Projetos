@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+    --cor0:#fff9f9;/*cor background do body e back bacground*/
+    --cor1:#333;/*color do h1 e h2*/
+    --cor2:#f0f8ff;/*background do menu */
+    --cor3:#d1e7ff; /*border do menu e background do menu hover*/
+    --cor4:#2c5e8f;/* cor da letra do menu*/
+    --cor5:#1a3d5f;/* cor da letra do menu hover */
+    --cor6:#ffd6e0; /*cor da borda do block */
+    --cor7:#666; /* color p do block */
+    --cor8:#8a6d3b;/* cor da data */
+    --cor9:#5b8c5a; /* cor do autidor */
+    --cor10:#a94442;/* cor do float */
+
+
+}
+body{
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  background-color: var(--cor0);
+
+}
+header h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 28px;
+	color: #333;
+	margin-bottom: 15px;
+}
+nav{
+  display: flex;
+	gap: 20px;
+	background-color: #f0f8ff;
+	border: 1px solid #d1e7ff;
+	padding: 10px;
+	border-radius: 5px;
+  margin-bottom: 30px;
+}
+nav a{
+  text-decoration: none;
+	color: #2c5e8f;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+nav a:hover{
+  border: 1px solid var(--cor3);
+  background-color: var(--cor3);
+  
+}
+main{
+  width: 800px;
+  margin: 0px auto;
+}
+.block{
+  border: 1px solid #ffd6e0;
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #fff9f9;
+	position: relative;
+}
+.block h2{
+  margin-top: 5px;
+	color: #333;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 22px;
+}
+.block p{
+  color: #666;
+	line-height: 1.5;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+}
+
+.data{
+  color: var(--cor8);
+  font-family: monospace;
+  font-size: 14px;
+  
+  
+}
+.data a{
+  color: #5b8c5a;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+.data a:hover{
+  text-decoration: underline;
+}
+.float{
+  text-align: right;
+  
+}
+.float a{
+  color: #a94442;
+	text-decoration: none;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+
+}
+.float a:hover{
+  text-decoration: underline;
+}
+footer{
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  margin-left: 10px;
+
+}
+footer a{
+  text-decoration: none;
+	color: #333;
+	background-color: #f0e6ff;
+	padding: 8px 15px;
+	border-radius: 4px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	border: 1px solid #d9c2ff;
+
+}
+footer a:hover{
+  background-color: #d9c2ff;
+}
+
