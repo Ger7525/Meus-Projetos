@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;                  
+}
+h1{
+   background-color: #333;
+   padding: 50px;
+   color: white;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+
+
+}
+main{
+   background-color: blue;
+   max-width: 900px; 
+   margin: 0 auto;                
+}
+.conyainer{
+  margin: 0;
+   
+
+}
+.block{
+  display: flex;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: beige;                  
+}
+.block p{
+   text-align:center;
+   font-size: 24px;                 
+
+}
+
+  }
