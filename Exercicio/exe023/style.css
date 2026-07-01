@@ -1,9 +1,50 @@
 @charset "UTF-8";
 
+:root{
+    --cor00:#f5f5f5; /*cor do body*/
+    --cor01:#333;/*cor do h1 e cor do a menu footer*/
+    --cor02:#fef6e4;/*cor do background nav menu e cor do background do main-menu */
+    --cor03:#f3d2c1;/*cor da border da nav menu e border do main-menu*/
+    --cor04:#172c66;/*cor do menu lateral e rodape do block e ado main-menu*/
+    --cor05:#001858;/*cor do a.active do main-menu */
+    --cor06:#444;/*cor do h3 do block e h2*/
+    --cor07:#666;/*cor do p do block*/
+    --cor08:#0066cc;/*cor do a menu-vertical e cor do meta a*/
+    --cor09:#e6f2ff;/*cor do a:hover do menu-vertical*/
+    --cor10:white;/*cor do background do block*/
+    --cor11:#ddd;/*cor da border do block*/
+    --cor12:#888;/*cor do meta e footer p*/
+    --cor13:#4d96ff;/*cor do like*/
+    --cor14:#2d7dff;/*cor dop like hover*/
+    --cor15:#e2f3f5;/*cor do background do menu footer*/
+    --cor16:#a6e1fa;/*cor do border a footer e hover do a*/
+
+    --font01: Arial, sans-serif; /* fonte do body , menu-vertical*/
+    --font02: 'Georgia', serif; /*fonte do header h1, da logo, h3, h2*/
+    --font03: 
+    
+}
+
 
 body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;                
+    font-size: 16px;
+    background-color: var(--cor00);                
+}
+header{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    text-align: center;
+    
+}
+div.logo{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+   
 }
