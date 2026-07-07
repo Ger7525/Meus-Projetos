@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+:root{
+   --cor01:#f8faf8; /*cor do body*/
+   --cor02:#333;/*cor do color do body*/
+   --cor03:#e8f5e9;/*cor do background do header edo header-left, background do menu-main, border-botton do h3*/
+   --cor04:#c8e6c9;/*cor da borda do header, cor do background do header-menu-right, background do menu-main background do menu hover, background hover do menu vertical*/
+   --cor05:#2e7d32;/*cor do h1, h3 do header, cor do slogan*/
+   --cor06:#a5d6a7;/*borda do herader-left, border do manu-main*/
+   --cor07:#1b5e20;/*cor da fonte do header-menu-right, color da logo. cor da fonte do menu a e h2*/
+   --cor08:#81c784;/*background do menu-active*/
+   --cor09:#ff9800;/*background menu right*/
+   --cor010:#f57c00;/*background hover do menu-right*/
+   --cor011:#dcedc8; /*border do block*/
+   --cor012:#555;/*color do p*/
+   
+   
+
+
+   --font01:'Open Sans', Arial, sans-serif;/*fonte do body, fonte a do menu vertical*/
+   --font02:'Montserrat', sans-serif;/*fonte do h1 header, menu header, da logo*/
+}
+*{
+  margin: 0;
+  padding: 0;
+ 
+}
+body{
+   font-family: var(--font01);
+   background-color: var(--cor01);
+   color: var(--cor02);
+}
+header{
+   background-color: var(--cor03);
+   
+   
+}
+.header-rigth{
+   display: flex;
+   justify-content: right;
+   gap: 20px;
+   padding: 20px 30px;
+   font-size: 13px;
+ 
+   
+}
+.header-rigth a{
+   text-decoration: none;
+   transition: all 0.3s;
+   font-family: var(--font02);
+}
+.header-rigth a:hover{
+   background-color: var(--cor04);
+   padding: 5px 10px ;
+   font-size: 13px;
+
+}
+.header-left{
+   position: absolute;
+   top: 20px;
+   left: 30px;
+   background-color: var(--cor03);
+   border: 1px solid var(--cor04);
+   width: 250px;
+   box-shadow: 0px 0px 2px var(--cor05);
+   transform: rotate(-3deg);
+   transition: all 0.3s;
+
+}
+.header-left:hover{
+   transform: rotate(-1deg);
+   box-shadow: 0px 0px 15px var(--cor05);
+   
+}
+.header-left div h2{
+   font-size: 30px;
+   text-align: center;
+   color: var(--cor05);
+   font-family: var(--font02);
+   padding: 10px;
+}
+.header-left div p{
+   padding: 0 10px 10px 10px;
+   font-size: 14px;
+   text-align: center;
+   color: var(--cor05);
+}
+.header-left a{
+   text-decoration: none;
+} 
+header h1{
+   text-align: center;
+   margin: 50px 0 30px 0;
+   padding-bottom: 30px;
+   color:var(--cor05)
+}
+nav{
+   display: flex;
+	justify-content: space-between;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 12px 20px;
+   
+}
+.navbar{
+   background-color: #e8f5e9;
+	border: 1px solid #a5d6a7;
+	border-radius: 5px;
+	margin: 0 auto 30px;
+	padding: 0;
+	max-width: 100%;
+   
+}
+.navbar-rigth{
+   padding: 10px;
+   text-align: right;
+   
+}
