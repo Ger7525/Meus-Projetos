@@ -97,22 +97,231 @@ header h1{
 nav{
    display: flex;
 	justify-content: space-between;
-	max-width: 1400px;
+	max-width: 100%;
 	margin: 0 auto;
-	padding: 12px 20px;
-   
-}
-.navbar{
+
    background-color: #e8f5e9;
 	border: 1px solid #a5d6a7;
-	border-radius: 5px;
-	margin: 0 auto 30px;
-	padding: 0;
-	max-width: 100%;
+}
+
+.navbar{
+  margin-left: 80px;
+  display: block;
+  padding: 20px;
+
+	
    
 }
+.action{
+   display: inline-block;
+   background-color: var(--cor08);
+   border-radius: 5px;
+   text-decoration: none;
+   color: #1b5e20;
+   font-weight: bold;
+   padding: 20px 30px;
+}
+.navbar a{
+   margin-right: 20px;
+   border-radius: 5px;
+   text-decoration: none;
+   color: #333;
+   padding: 10px; 
+   transition: all 0.3s;
+}
+.navbar a:hover{
+   background-color: #a5d6a7;
+}
+
 .navbar-rigth{
-   padding: 10px;
-   text-align: right;
+   
+   display: inline-block;
+   margin: auto;
    
 }
+.navbar-rigth a{
+   margin-right: 20px;
+   border: 1px solid var(--cor010);
+   background-color: #ff9800;
+   padding: 10px;
+   color: white;
+   border-radius: 5px;
+   text-decoration: none;
+   transition: all 0.3s;
+
+}
+.navbar-rigth a:hover{
+   background-color: var(--cor010);
+}
+main{
+   width: 80%;
+   margin:25px auto 0 ;
+   display: flex;
+}
+.main-vertical{
+   width:20%;
+}
+.caixa-vertical{
+   background-color: white;
+   border: 1px solid var(--cor011);
+   margin-bottom: 20px;
+   border-radius: 8px;
+   box-shadow:  0px 0px 2px var(--cor011);
+   padding: 10px;
+   
+}
+.caixa-vertical h3{
+   color: var(--cor05);
+   border-bottom: 1px solid var(--cor04);
+   padding: 10px;
+
+}
+.caixa-vertical a{
+   display: block;
+   margin: 20px;
+   font-size: 14px;
+   text-decoration: none;
+   padding: 10px;
+   border-radius: 5px;
+   transition: all 0.3s;
+   color: var(--cor05);
+
+}
+.caixa-vertical a:hover{
+   background-color: var(--cor04);
+   font-size: 15px;
+}
+.caixa-vertical p{
+   font-size: 14px;
+   padding: 20px  10px;
+   color: #555;
+}
+.caixa-vertical div{
+   text-align: center;
+   margin-top: 15px;
+}
+.caixa-vertical div input{
+   width: 200px;
+   background-color: white;
+	border: 1px solid #dcedc8;
+	border-radius: 8px;
+	padding: 10px;
+	transition: all 0.3s ease;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+
+}
+.caixa-vertical div input:hover{
+ 
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	border-color: #a5d6a7;
+}
+.botao{
+   text-align: center;
+  
+}
+.caixa-vertical button{
+   width: 220px;   
+   padding: 8px 0; 
+   border-radius: 5px;
+   color:white;
+   background-color: #81c98190;
+   border: 1px solid var(--cor08);
+   font-weight: bold;
+   
+}
+.caixa-vertical button:hover{
+   background-color:var(--cor08);
+}
+.central{
+   width: 80%;
+}
+.box{
+   display: inline-block;
+   background-color: white;
+   border: 1px solid var(--cor011);
+   border-radius: 8px;
+   width: 45%;
+   margin: 0 20px 20px 20px;
+   transition: all 0.3s ease;
+	box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+   
+}
+.box:hover{
+   transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	border-color: #a5d6a7;
+}
+.box h3{
+   color: var(--cor05);
+   font-family: var(--font02);
+   padding: 10px;
+   margin: 10px;
+}
+.box p{
+   font-size: 14px;
+   padding: 20px  10px;
+   color: #555;
+   margin: 10px;
+}
+.box div{
+   color: var(--cor05);
+   font-weight: bolder;
+   margin-left: 20px;
+
+   font-size: 20px;
+
+}
+.carrinho{
+   display: block;
+   margin: 0 auto;
+   
+   padding: 5px;
+}
+.box button{
+   color: white;
+   background-color: var(--cor05);
+   border: 1px solid var(--cor05);
+   margin: 5px auto 10px;
+   padding: 10px;
+   border-radius: 8px;
+   width: 90%;
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+footer{
+   margin-top: 30px;
+   border-top: 1px solid var(--cor07);
+   background-color: var(--cor04);
+}
+.menu-footer{
+   display: flex;
+   margin: 40px auto;
+}
+.menu-footer .coluna{
+   margin: 0 auto;
+}
+.menu-footer .coluna h3{
+   color: var(--cor07);
+   font-family: var(--font02);
+   padding: 5px;
+   margin-bottom: 10px;
+   font-size: 14px;
+}
+.menu-footer .coluna a{
+   display: block;
+   font-family: var(--font02);
+   padding: 5px;
+   font-size: 14px;
+   text-decoration: none;
+   color: var(--cor05);
+}
+.menu-footer .coluna a:hover{
+   text-decoration: underline;
+}
+footer p{
+   text-align: center;
+   font-size: 13px;
+   color: #555;
+   padding-bottom: 20px;
+}
+
