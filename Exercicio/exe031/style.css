@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+:root{
+      --cor01:#fbfbfb;/*background do body*/                                  
+}
+body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     margin: 0;
+     padding: 20px;
+     background-color: var(--cor01);
+
+}

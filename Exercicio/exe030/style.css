@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+:root{
+     --cor01: #fbfbfb;
+     --cor02: #333;
+     --cor03: #777;
+     --cor04:#fff9f9; 
+     --cor05: #ffcce0; 
+     --cor06:#555; 
+     --cor07:#666;
+     --cor08: #ff99c2;
+     --cor09:#ff6699; 
+     --cor10:#888;        
+}
+body{
+   background-color: var(--cor01);
+   margin: 0;
+   padding: 20px;
+   text-align: center;  
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;               
+}
+header{
+                  
+}
+header h1{
+    color: var(--cor02);
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: clamp(24px. 3vw, 32px);
+    font-family: 'Georgia', serif;              
+}
+header p{
+    color: var(--cor03);
+    font-size: 0.9rem;
+    margin: 0 0 15px 0;
+    line-height: 1.4;              
+}
+.container{
+     width: 100%;
+     max-width:1200px;
+     display:grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap:20px;
+     margin: 0 auto;
+                    
+}
+.bloco{
+    border: 1px solid var(--cor05);  
+    background-color: var(--cor04);
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+
+                  
+}
+.bloco h2{
+    margin-top: 0;
+    margin-bottom: 10px;                
+    font-size: 1.2rem;
+    color:var(--cor06);
+    font-family: Arial, Helvetica, sans-serif;              
+}
+.bloco p{
+     font-size: 0.9rem; 
+     color: var(--cor07); 
+
+}
+.bloco button{
+      border: 1px solid var(--cor09);
+      background-color: transparent;
+      border-radius: 4px;
+      padding: 8px 16px;
+      color: var(--cor09); 
+      transition: all 0.3s; 
+      cursor: pointer;
+      width: auto;           
+}
+.bloco button:hover{
+      background-color: var(--cor05);              
+}
+footer{
+    text-align: center;
+	margin-top: 40px;
+	padding: 20px;
+	color: #888;
+	font-size: 0.9rem;             
+}
+@media (max-width: 1024px) {
+	.container {
+	  grid-template-columns: repeat(3, 1fr);
+
+                    }
+}                    
+@media (max-width: 768px) {
+	.container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	button {
+		width: 100%;
+	}
+}
+@media (max-width: 480px) {
+	body {
+		padding: 15px;
+	}
+	.container {
+		grid-template-columns: 1fr;
+	}
+	.bloco p {
+		display: none;
+	}
+	.bloco {
+		padding: 15px;
+	}
+}
