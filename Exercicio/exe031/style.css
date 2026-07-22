@@ -10,3 +10,88 @@ body{
      background-color: var(--cor01);
 
 }
+header{
+   height: 100px; 
+   max-width: 100%;
+   text-align: center;  
+}
+header h1{
+      font-family: 'Georgia',serif;
+      font-size:clamp(24px, 3vw, 32px);
+      color: #333;
+      margin-bottom: 10px;
+}
+header p{
+      margin-bottom: 30px;
+      color: #777;
+      font-size: 1rem;
+}
+.container{
+      width: 100%;
+      max-width: 1200px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin: 0 auto;
+      justify-content: center;
+      
+}
+.bloco{
+      
+      width: 300px;
+      padding: 20px;
+      border: 1px solid pink;
+      background-color: rgba(255, 192, 203, 0.068);
+      text-align: center;
+      border-radius: 8px;
+}
+.bloco h3{
+      color: #555;
+      font-size: 1.1rem;
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.bloco p{
+      color: #666;
+      font-size: 0.9rem;
+      margin: 0 0 15px 0;
+      line-height: 1.4;
+
+}
+.bloco button{
+      border: 1px solid  rgb(223, 122, 139);;
+      background-color: transparent;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      color: rgb(223, 122, 139);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+
+}
+.bloco button:hover{
+      background-color: pink;
+}
+footer{
+      text-align: center;
+      margin-top: 40px;
+      color: #888;
+      font-size: 0.9rem;
+      padding: 20px;
+      
+}
+@media (max-width: 768px){
+      .container{
+          flex-wrap: wrap ,  minmax  300px ;
+      }
+}
+@media (max-width: 480px) {
+	body {
+		padding: 15px;
+	}
+	.block {
+		padding: 15px;
+	}
+}
+
