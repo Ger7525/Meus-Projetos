@@ -32,44 +32,26 @@ h1{
   font-size: 2.2rem;
 
 }
-.container{
-     display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 3rem;
-    max-width: 100%;               
-}
-    
-
-.bloco-1{
-   border: 1px solid green; 
-   background-color: rgba(194, 228, 194, 0.329);     
-   flex: 1 1 400px;
-   padding: 1.5rem;
-   border-radius: 5px;
-   max-width: 100%;
+main{
+   width: 100%;
+   max-width: 1000px;
    
-            
 }
-.bloco-2{
-   border: 1px solid green; 
-   background-color: rgba(194, 228, 194, 0.329);     
-   border-radius: 5px;
-   width: 23%;
-   margin: 6px;
-                    
+.container-1{
+ display: inline-flex;
+ gap: 20px;
+ justify-content: center;
+ justify-items: center;
+ margin: 0 auto;
+
+  
+   
+.bloco-1{
+   border: 1px solid green;
+   background-color: rgba(187, 233, 187, 0.479);
+   width:600px;
 }
-.bloco-1, bloco-2, h2{
-   font-family: 'Roboto', sans-serif;
-   font-size: 1.5rem;
-   color: #3a5a40;
-   margin-top: 0;               
-}
-.bloco-1, bloco-2, p{
-   padding: 10px;
-   color:  rgb(11, 73, 11);
-}
+
 footer{
     text-align: center;
     margin-top: 50px;
