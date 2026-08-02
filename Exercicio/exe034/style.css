@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+:root{
+       --cor-text-body:#333 ;
+       --back-do-header:#3a7bd5;
+       --back-box:#fff;
+       --color-h2:#2a5ba7;            
+}
+body{
+   margin: 0;
+   padding: 0;
+   line-height: 1.5em;
+   text-align: center;
+   color: #333; 
+   background-color:#f5f9ff;  
+   box-sizing: border-box;              
+}
+ main h2{
+  color: var(--color-h2);
+  padding: 20px;
+ }
+  
+ 
+.mundo{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header{
+                    background-color: var(--back-do-header);
+                    color: white;
+                    padding: 30px;
+                    border-radius: 8px;
+                    margin-bottom: 30px;
+}
+.bem-vindo{
+                    background-color: white;
+                    padding: 20px;
+                    border-radius: 8px;
+                    margin-bottom: 30px;
+                     box-shadow: 1px 1px 5px rgb(114, 108, 108);
+}
+.bem-vindo h2{
+                   color: var(--color-h2); 
+}
+.bem-vindo p{
+                    font-size: 1em;
+                    padding-bottom: 20px;
+}
+.bem-vindo button{
+                   padding: 10px 35px;
+                   border-radius: 5px;
+                   background-color: var(--back-do-header);
+                   color: white;
+                   border: none;
+                   font-weight: bold;
+                   cursor: pointer;
+                   transform:3deg;
+                   transition: all 0.3s;
+                   
+
+}
+.bem-vindo button:hover{
+                    background-color: var(--color-h2);
+                    transform: translateY(-2px);
+
+}
+.grid-servicos{
+  display: grid;
+  grid-template-columns:1fr ;
+  gap: 20px;
+}
+.grid{
+  background-color: white;
+  border-radius: 8px;
+   box-shadow: 1px 1px 5px rgb(114, 108, 108);
+  transition: all 0.3s;
+  
+}
+.grid:hover{
+  transform: translateY(-5px);
+}
+.grid h3{
+  color: var(--back-do-header);
+  padding: 10px;
+  transition: all 0.3s;
+  transform: translateY(3px);
+}
+.grid p{
+  padding-bottom: 15px;
+}
+.grid button{
+  margin-bottom: 25px;
+  padding: 8px 20px;
+  border-radius: 5px;
+  border: 1px solid var(--back-do-header);
+  color: var(--back-do-header);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+} 
+.grid button:hover{
+  background-color: var(--color-h2);
+  color: white;
+}
+.contato{
+  display: grid;
+  grid-template-columns: (1, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}  
+.box{
+  background-color: white;
+  border-radius: 8px;
+   box-shadow: 1px 1px 5px rgb(114, 108, 108);
+}
+.box h2{
+  text-align: left;
+  padding-left: 30px;
+}
+.box p{
+  padding: 0 30px 40px;
+  text-align: left;
+}
+footer{
+  background-color: white;
+  color: #666;
+  padding: 30px;
+  margin: 35px 0 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 5px rgb(114, 108, 108);
+}
+@media  (min-width:1200){
+  .grid-servicos {
+		 grid-template-columns: repeat(4, 1fr);
+	}
+	.contato {
+		grid-template-columns: repeat(2, 1fr);
+	} 
+}
+
+@media (min-width:600px) and (max-width: 900px) {
+	.grid-servicos {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.contato {
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 600px) {
+	.grid-servicos {
+		grid-template-columns: 1fr;
+	}
+	.saudacao {
+		padding: 30px 20px;
+	}
+	header h1 {
+		font-size: 2rem;
+	}
+}

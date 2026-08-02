@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+:root{
+       --color-body:#333;
+       --back-header:#fff;
+       --border-bootton-header:#d1e7dd;
+       --color-logo:#2c3e50;
+       --back-main-box:#d1e7dd;             
+}
+*{
+   margin: 0;
+   padding: 0;                 
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  color: var(--color-body);
+  line-height: 1.6em;                 
+}
+.container{
+   max-width: 1200px; 
+   margin: 0 auto;
+   padding: 0 20px;                
+}
+header{
+   background-color: var(--back-header);
+   color: var(--color-logo);
+   padding: 20px 0;
+   border-bottom: 1px solid var(--border-bootton-header) ;
+   display: block;
+   justify-content: space-between;
+   align-items: center;
+   
+                   
+}
+header h2{
+   font-size: 24px;
+	font-weight: 700;
+	color: #2c3e50;
+	margin: 0; 
+   text-align: center; 
+             
+}
+.menu-sup{
+   display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 20px;
+   text-align: center;
+  
+}
+.menu-sup li{
+   padding: 5px 0;               
+}
+.menu-sup li a{
+   text-decoration: none;
+	color: #2c3e50;
+	font-weight: 500;
+   
+                
+}
+.main-box{
+   background-color: var(--back-main-box);
+   border-radius: 5px;
+   margin: 30px 0;
+   padding: 40px 20px;
+    box-shadow: 0px 0px 5px rgba(117, 111, 111, 0.348);
+   text-align: center; 
+
+}
+.main-box h1{
+   padding: 30px 10px;                 
+}
+.main-box p{
+   padding: 0 30px 30px;                 
+}
+.main-box button{
+   padding: 10px 25px;
+   border-radius: 5px;
+   border: 1px solid var(--color-logo);
+   background-color: var(--color-logo);
+   color: white;
+   font-weight: bold; 
+   cursor: pointer;                
+}
+.main-grid{
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 20px;
+}
+.grid{
+   background-color:white;
+   border-radius: 8px;
+   padding: 20px;
+   text-align: left;
+   margin-top: 10px;
+   box-shadow: 0px 0px 5px rgba(117, 111, 111, 0.318);
+}
+.grid h3, p{
+   padding: 10px;
+}
+footer{
+   background-color: var(--color-logo);
+   padding: 25px 0;
+   color: white;
+   margin-top: 60px;
+   text-align: center;
+}
+@media screen and (min-width:768px) and (max-width:992px){
+   header{
+      display: flex;
+   }
+   .menu-sup{
+      display: flex;
+   }
+   .main-grid{
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media screen and (min-width:992px) and (max-width:1400px){
+   header{
+      display: flex;
+   }
+   .menu-sup{
+      display: flex;
+   }
+   .main-grid{
+      grid-template-columns: repeat(3, 1fr);
+   }
+}

@@ -1,64 +1,190 @@
 @charset "UTF-8";
 
+:root{
+   --text-bold:#333; 
+   --backgrond-body:#f8faf3;
+   --cor-h1:#3a5a40;
+   --back-bloco:#f0f7e6;
+   --border-bloco:#d8eacc;
+   --cor-texr-footer:#666; 
+}
 
-  
-    
-                 
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing:border-box ;
+   font-family: 'Open Sans',Arial, Helvetica, sans-serif
 }
 body{
-  background-color: rgb(230, 224, 224);
-  font-family: 'open Sans', Arial, Helvetica, sans-serif;
-  color:#333;
-  line-height: 1.6;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 20px;
-
-
-}
-*{
-   box-sizing: inherit;                 
+   background-color: var(--backgrond-body);
+   color: var(--text-bold);
+   
 }
 header{
-   text-align: center;
-   margin-bottom: 2rem;
-   max-width: 100%;                 
-   overflow: hidden;               
-}
-h1{
-  font-family: 'Roboto',sans-serif;
-  margin-bottom: 1rem;
-  color: rgb(2, 75, 2);
-  font-size: 2.2rem;
 
+   margin: 50px;
+   text-align: center;
+}
+header h1{
+   color: var(--cor-h1);
+   font-size: 2em;
 }
 main{
-   width: 100%;
-   max-width: 1000px;
    
+ width: 100vw;
+ max-width: 1200px;  
+ margin: 0 auto; 
+   
+  
 }
 .container-1{
- display: inline-flex;
- gap: 20px;
- justify-content: center;
- justify-items: center;
- margin: 0 auto;
-
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%px;
+   justify-content: center;
+   
+}
+.bloco-1{
+   display: block;
+   border: 1px solid var(--border-bloco);
+   background-color: var(--back-bloco);
+   margin: 15px 30px;
+   border-radius: 5px;
+   width: 100%px;
+   padding: 10px;
+}
+.bloco-1 h2{
+   margin: 15px;
+   color: var(--cor-h1);
+   font-size: 1.5em;
+}
+.bloco-1 p{
+   margin: 15px;
+   font-size: 1em;
+   line-height: 1.5em;
+   margin-bottom: 30px;
+}
+.container-2{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 35px;
+   justify-content: center;  
+   
+   margin-top: 10px;
+}
+.itens{
+   border: 1px solid var(--border-bloco);
+   background-color: var(--back-bloco);
+   width: 40%;
+   border-radius: 5px;
+   padding: 10px;
   
    
-.bloco-1{
-   border: 1px solid green;
-   background-color: rgba(187, 233, 187, 0.479);
-   width:600px;
 }
-
+.itens h3{
+   color: var(--cor-h1);
+   margin:30px 10px
+}
+.itens p{
+   text-align: 1em;
+   line-height: 2em;
+   padding:0 10px;
+}
+.container-3{
+   display: flex;
+   flex-wrap: wrap;
+   width: 90%px;
+   justify-content: center;
+   margin-top: 30px;
+}
+.nota{
+   display: block;
+   border: 1px solid var(--border-bloco);
+   background-color: var(--back-bloco);
+   margin: 15px 30px;
+   border-radius: 5px;
+   width: 100%px;
+   padding: 10px;
+   
+}
+.nota h3{
+   color: var(--cor-h1);
+   margin:30px 10px
+}
+.nota p{
+   text-align: 1em;
+   line-height: 2em;
+   padding:0 10px;
+   margin-bottom: 10px;
+}
 footer{
-    text-align: center;
-    margin-top: 50px;
-    border-top: 1px solid green;
+   margin-top: 30px;
+   border-top:1px solid var(--border-bloco);
+   text-align: center;
+   padding: 40px;
 }
 footer p{
-   padding-top: 40px;   
-   font-size: 0.9rem;
-   color: #666;              
+   font-size: 0.9em;
+   color: var(--cor-texr-footer);
 }
+@media screen and (min-width:500px) and (max-width:768px) {
+      .container-1{
+         width: 768px;
+   
+      }
+      .bloco-1{
+         width: 90%;
+      }
+      .container-2{
+         width: 768px;
+      }
+      .itens{
+         
+         width: 330px;
+                 
+      } 
+      .container-3{
+            
+            width: 768px;
+            
+            
+         }
+         .nota{
+            width: 320px;
+        }
+}       
+@media screen and (min-width: 768px) {
+         .container-1{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+            
+            
+         }
+         .bloco-1{
+            
+            width:42%;
+           
+         }
+         .container-2{
+            width:1200px
+         }
+         .itens{
+            border: 1px solid var(--border-bloco);
+            background-color: var(--back-bloco);
+            width: 20%;
+           
+                      
+         }
+         .container-3{
+            display: flex;
+            flex-wrap: wrap;
+            width: 1200px;
+}
+         .nota{
+             width:42%;
+           
+            
+         }
+   }
+
