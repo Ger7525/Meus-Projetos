@@ -16,11 +16,14 @@
       --color-img-box:#dbeafe; 
       --back-footer:#1e293b;          
 }
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: var(--back-body);
     color: var(--color-body);
-    margin: 0;
-    padding: 0;
     line-height: 1.6em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -28,26 +31,31 @@ body{
 .container{
    max-width: 1200px;
    margin: 0 auto;
+   
 
                    
 }
 header{
     display:flex;
-    
     gap:2em;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 30px;
     background-color: var(--back-header);
     color: white; 
-    padding: 20px;             
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+               
 }
-header button{
-    display: flex;  
-    float: right;              
-    text-align:right ;
+header .material-symbols-outlined{
     background-color: transparent;
     border: none;
     color: white;
     cursor: pointer;
-                    
+                        
 }
 header nav{
    display: none;                 
@@ -59,4 +67,163 @@ header nav a{
    text-decoration: none;
     cursor: pointer; 
     font-weight: bold;               
+}
+.main-header{
+    text-align: center;
+    color: white;
+    background-color: var(--back-main-header);
+}
+.main-header h1{
+    font-size: 2.3rem;
+    padding: 10px 20px 20px 20px;
+}
+.main-header p{
+    font-size: 1rem;
+    padding: 10px 20px 20px 20px;
+}
+.main-header button{
+    background-color: white;
+    color:var(--back-header);
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 14px 30px;
+    margin: 20px 20px 70px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.main-header button:hover{
+   transform:translateY(-3px);
+}
+.serv{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-h2);
+    margin: 40px;
+}  
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.grid-box{
+    background-color: white;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+} 
+.grid-box:hover{
+    transform: translateY(-3px);
+}
+.grid-box h3{
+    color: var(--color-h3);
+   padding:10px;
+   font-size: 1rem;
+}
+.grid-box p{
+    color: var(--color-body);
+    font-size: 0.90rem;
+    padding: 10px 10px 20px 10px;
+} 
+.main-contato{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.contato-grid-1{
+    margin: 10px 20px 10px 20px;
+    width: 98%;
+    height: 200px;
+}
+.contato-grid-1 h1{
+    color: var(--color-h2);
+     margin-top: 30px;
+     margin-bottom: 30px;
+}
+.contato-grid-1 p{
+    color: var(--color-body);
+    font-size: 1rem;
+    
+}
+.contato-grid-2{
+    margin: 10px 20px 10px 20px;
+    background-color: var(--color-img-box);
+    border-radius: 8px;
+    width: 98%;
+    height: 200px;
+} 
+footer{
+    text-align: center;
+    background-color: var(--back-footer);
+    color: white;
+    padding: 20px;
+}
+
+/*telas de celulares grandes*/
+@media screen and (min-width:500px) and (max-width: 768px){
+    .main-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .grid-box{
+        width: auto;
+        
+    }
+    .main-contato{
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .contato-grid-1, .contato-grid-2{
+        width: auto;
+        height: auto;
+    }
+    
+}
+/*telas de tablets*/
+@media screen and (min-width: 769px) and (max-width: 992px) {
+     .main-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .grid-box{
+        width: auto;
+        max-width: 300px;
+        
+    }
+    .main-contato{
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .contato-grid-1, .contato-grid-2{
+        width: auto;
+        height: auto;
+    }
+}
+/*Telas de desktop*/
+@media screen and (min-width: 993px) {
+     .main-grid{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .grid-box{
+        width: auto;
+        max-width: 350px;
+        
+    }
+    .main-contato{
+    grid-template-columns: repeat(2, 1fr);
+    
+    }
+    .contato-grid-1, .contato-grid-2{
+        width: auto;
+        height: auto;
+    }
 }

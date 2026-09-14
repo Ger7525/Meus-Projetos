@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+:root{
+          /*texto*/
+          --color-body:#222;
+          --color-destaque:#d4af37;
+          --color-menu-hover:#fff;
+          --collection-card:#666;
+          /*Fundos*/
+          
+          --bg-body:#f8f5f0;
+          --bg-sidebar:#222;
+          --bg-hero: #1a1a1a;
+          --bg-bt-hover:#c9a227;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;                 
+}
+body{
+                    
+}
