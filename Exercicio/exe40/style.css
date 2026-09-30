@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+:root {
+  /* Marca e Destaque Principal */
+  --color-primary: #0F5A47;        /* Verde Esmeralda Profundo */
+  --color-secondary: #38A3A5;      /* Verde Menta / Sálvia (CTAs, Hovers, Badges) */
+  --color-secondary-hover: #2B8385;/* Tom para estado hover */
+
+  /* Fundos */
+  --color-bg-main: #FFFFFF;        /* Fundo Principal */
+  --color-bg-alt: #F4F7F6;         /* Fundo Secundário (Cards, Caixas de Texto) */
+
+  /* Textos e Detalhes */
+  --color-text-main: #1A202C;      /* Texto Principal (Títulos, Preços) */
+  --color-text-muted: #718096;     /* Texto Secundário e Subtítulos */
+  --color-border: #E2E8F0;         /* Bordas suaves */
+
+  /* Caixas da Logo */
+  --logo-box-bg-light: #F4F7F6;
+  --logo-box-border: #38A3A5;
+  --logo-box-bg-dark: #0F5A47;
+  --logo-box-text-dark: #FFFFFF;
+}
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+}
+body{
+                    background-color:var(--color-bg-alt);
+                    font-size: 1.5em;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: var(--color-text-main);
+}
+header{
+                    background-color: var(--logo-box-bg-dark);
+                    color: var(--logo-box-text-dark);
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    padding: 20px;
+                    text-align: center;
+
+}
+.header-logo h1{
+                    font-size: 1.3em; 
+                    margin-bottom: 20px;
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.699);
+                    transform: rotate(-5deg); 
+                    cursor: pointer;
+                    transition: all 0.5s;        
+}
+.header-logo h1:hover{
+                    color: var(--color-primary);
+                    text-shadow: 0px 0px 11px var(--logo-box-text-dark);
+                    transform: rotate(-3deg);
+
+}
+.header-texto h1{
+                    font-size: 1.3em; 
+                    padding: 20px;
+                    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.699);    
+}
+.header-texto p{
+                     font-size: 0.6em; 
+                     font-style: italic;
+}
+.menu-topo{
+                   
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    gap: 10px;
+                    padding: 20px 10px;
+                    list-style: none;
+                    border-bottom: 1px solid var(--color-border);
+                    background-color: var(--color-secondary);
+}
+.menu-topo li a{
+                    color: white;
+                    text-decoration: none;
+                    font-size: 0.7em;
+                    font-weight: bold;
+
+
+}
