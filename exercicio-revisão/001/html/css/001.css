@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+}
+body{
+                    margin: o auto;
+                    text-align: center;
+                    background: #999;
+}
+h1{
+                    padding: 20px;
+}
+.caixa{
+                    width: 80%;
+                    border: 1px solid #000;
+                    margin: 0 auto;
+                    background: #fff;
+}
+p{
+                    padding: 10px;
+                    text-indent: 20px;
+                    line-height: 1.5;
+                    text-align: justify;
+}
+footer p{
+                    
+                    padding: 20px;
+                    color: #fff;
+                    text-align: center;
+}
+footer .botao a:link{
+                    border: 1px solid pink;
+                    background: #fff;
+                    color: pink;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                    text-decoration: none;
+}
+a:hover{
+                    background: pink;
+                    color: #fff;
+}
+@media screen and (min-width:768px) {
+           .caixa{
+                    width: 600px;
+                   
+      }         
+}
