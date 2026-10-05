@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+                    margin: 0;
+                    padding: 0;
+                   
+}
+body{
+                    background-image: linear-gradient(to left, white, black);
+}
+
+
+#container{
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    align-items: center;
+                    flex-flow: row wrap;
+                    margin-top: 20px;
+}
+.box{
+                    width: 90%;
+                    background-color: #999;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 5px;
+}
+.box h2{
+                    padding: 10px;
+
+}
+.box p{
+                    padding: 10px;
+                    text-align: justify;
+                    color: #222;
+}
+.mais{
+                    text-align: right;
+                    padding:10px ;
+                    float: right;
+                    text-decoration: none;
+                    color: #000;
+}
+.mais:hover{
+                    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+                    text-align: center;
+                    padding: 20px;
+                   
+                    
+                    
+
+}
+footer p{
+                   
+                    color:white;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 0.8em;
+}
+footer a:link,footer a:visited{
+                    border: 1px solid #000;
+                    background: #fff;
+                    color: #000;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                    text-decoration: none;
+}
+ footer a:hover{
+                    background: #000;
+                    color: #fff;
+}
+@media screen and (min-width:768px) {
+                    .box{
+                              width: 30%;          
+                    }
+                    .box p{
+                                        font-size: 0.8em;
+                    }
+}
+@media screen and (min-width:992px) {
+                    #container{
+                                        flex-flow: column wrap;
+                    }
+                    .box{
+                                        width: 500px;
+                    }
+                    .box p{
+                                        font-size: 1em;
+                    }
+}
