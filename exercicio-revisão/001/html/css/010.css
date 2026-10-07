@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+}
+body{
+                    background-color: lightsteelblue;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 1em;
+}
+header{
+                    background-color: lightslategrey;
+                    padding: 30px;
+                    color: #333;
+                    border-bottom: 1px solid #333;
+}
+header h1{
+                    text-align: center;
+                    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.398);
+}
+main#container{
+                    margin-top: 20px;
+                    display: flex;
+                    gap: 20px;
+                    flex-flow: row wrap;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+}
+.box-flex{
+                    background-color: white;
+                    border: 1px solid #333;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 5px black;
+                    min-width: 80%;
+                    width: 90%;
+                    margin: 0 auto;
+}
+.box-flex h2{
+                    padding: 10px;
+}
+.box-flex p{
+                    padding: 10px;
+                    text-align: justify;
+                    font-size: 0.8em;
+}
+.links{
+                    padding: 10px;
+                    display: flex;
+                    gap: 10px;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+}
+.links a{
+                    color: #333;
+}
+.links a:hover{
+                    text-decoration: none;
+}
+footer{
+                    text-align: center;
+                    padding: 20px;
+                    background-color: lightslategray;
+                    border-top: 1px solid #333;
+                    margin-top: 20px;
+                   
+                    
+                    
+
+}
+footer p{
+                   
+                    color:#333;
+                    padding: 20px;
+                    text-align: center;
+                    font-size: 0.8em;
+}
+footer a:link,footer a:visited{
+                    border: 1px solid #333;
+                    background: #fff;
+                    color: #333;
+                    padding: 8px 16px;
+                    border-radius: 5px;
+                    text-decoration: none;
+}
+ footer a:hover{
+                    background: #333;
+                    color: #fff;
+}
+@media screen and (min-width:768px) {
+            .box-flex{
+                    
+                    min-width:250px;
+                    max-width:400px;
+                    }
+}
+@media screen and (min-width:992px) {
+            #container{
+                    max-width: 700px;
+                    margin: 0 auto;
+            }
+            .box-flex{
+                   max-width: 600px; 
+                    
+             }
+}
