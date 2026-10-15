@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+:root {
+  /* Fundo e Profundidade */
+  --preto-deep-space: #02021A;
+  --azul-nebula-profundo: #001A3F;
+
+  /* Tons Azuis e Estelares */
+  --azul-estelar-claro: #1A6CFF;
+  --branco-estelar: #FFFFFF;
+
+  /* Tons Dourados e Metálicos */
+  --dourado-cosmico: #FFC600;
+  --brilho-dourado-suave: #FFEB7F;
+  --ambar-residual: #D2A24F;
+  --cobre-dust: #E09F3D;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background: var(--preto-deep-space) url(../img/bg-17.jpg) no-repeat center fixed;
+   background-size: cover;
+   font-family: Arial, Helvetica, sans-serif;
+   color: var(--branco-estelar);
+   font-size: 1em;
+
+}
+header{
+   padding: 20px;
+}
+#container{
+   margin:20px;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+}
+.box-grid{
+   border: 1px solid var(--dourado-cosmico);
+   width: 90%;
+   box-shadow: 0px 0px 10px var(--ambar-residual);
+   border-radius: 5px;
+   transition: all 0.5s;
+   text-align: center;
+
+}
+.box-grid:hover{
+   background-color:#ffec7f34;
+   box-shadow:-1px 1px 10px 7px var(--ambar-residual);
+   transform: translateX(-5px);
+
+}
+.box-grid a{
+   margin: 20px;
+   text-decoration: none;
+   padding: 20px;
+   color: #E09F3D;
+}
+.box-grid a:hover{
+   color: #FFEB7F;
+}
+/*configurações gerais*/
+h1{
+   text-align: center;
+   padding: 20px;
+   text-shadow: 1px 2px 3px var(--cobre-dust);
+}
+h3{
+   text-align: center;
+   padding: 20px;
+   color: var(--azul-estelar-claro);
+}
+p{
+   padding: 0 20px;
+   font-size: 0.8em;
+   text-align: center;
+   color:var(--brilho-dourado-suave) ;
+}
+footer{
+   padding: 20px;
+   text-align: center;
+
+
+}
+footer .botao{
+   margin: 10px;
+}
+footer .botao a{
+   text-decoration: none;
+   margin: 8px 16px;
+   color: var(--cobre-dust);
+   transition: all 0.3s;
+}
+footer .botao a:hover{
+   border: 1px solid var(--brilho-dourado-suave);
+    box-shadow:-1px 1px 10px 7px var(--ambar-residual);
+    border-radius: 3px;
+    color: #FFEB7F;
+}
+@media screen and (min-width:768px) {
+   #container{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .box-grid{
+      width: 100%;
+   }
+   
+}
+@media screen and (min-width:992px) {
+   #container{
+      grid-template-columns: repeat(2, 1fr);
+      
+      max-width: 900px;
+      margin: 0 auto;
+   }
+}

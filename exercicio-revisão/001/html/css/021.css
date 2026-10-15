@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+:root {
+  /* ==========================================
+     TIPOGRAFIA (Font Family)
+     ========================================== */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: 'Fira Code', Consolas, Monaco, monospace;
+
+  /* ==========================================
+     TEXTOS GERAIS
+     ========================================== */
+  --text-main: #2b2d42;        /* Texto principal escuro e legível */
+  --text-muted: #6c757d;       /* Texto secundário / legendas */
+  --text-light: #f8f9fa;       /* Texto claro para fundos escuros */
+
+  /* ==========================================
+     HEADER (Cabeçalho Principal)
+     ========================================== */
+  --bg-header: #ffffff;
+  --color-text-header: #1d3557;
+  --border-header: #e9ecef;
+
+  /* ==========================================
+     NAV-TOPO (Navegação Superior)
+     ========================================== */
+  --bg-nav-topo: #1d3557;      /* Fundo escuro elegante para o menu de cima */
+  --color-text-nav-topo: #f1faee;
+  --color-nav-topo-hover: #457b9d;
+
+  /* ==========================================
+     MAIN (Conteúdo Principal)
+     ========================================== */
+  --bg-main: #f8f9fa;          /* Fundo levemente acinzentado para destacar os blocos */
+  --bg-card: #ffffff;          /* Fundo para cards ou seções internas */
+
+  /* ==========================================
+     NAV-FOOTER (Navegação do Rodapé)
+     ========================================== */
+  --bg-nav-footer: #111827;    /* Fundo bem escuro (quase preto) para ancorar o rodapé */
+  --color-text-nav-footer: #9ca3af;
+  --color-nav-footer-hover: #ffffff;
+
+  /* ==========================================
+     CORES DE DESTAQUE (Acentos)
+     ========================================== */
+  --color-primary: #3b82f6;    /* Azul principal para botões e links ativos */
+  --color-success: #10b981;    /* Verde para confirmações/sucesso */
+  --color-warning: #f59e0b;    /* Amarelo/Laranja para avisos */
+}
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+body{
+   font-family: var(--font-primary);
+   font-size: 1em;
+   padding: 20px;
+}
+/*cabeçalho*/
+header{
+   background-color: var(--bg-header);
+   color: var(--color-text-header);
+   border-bottom: 1px solid var(--border-header);
+   padding: 30px;
+   text-align: center;
+}
+header h1{
+   font-family: var(--font-mono);
+   font-size: 2.2em;
+}
+/*navegação topo*/
+#nav-topo{
+   background-color: var(--bg-nav-topo);
+   border-radius: 5px;
+   padding: 20px;
+}
+#nav-topo ul{
+   display: flex;
+  
+   flex-flow: row wrap;
+   justify-content: space-around;
+   align-items: center;
+   align-items: center;
+}
+#nav-topo a{
+   color: var(--color-text-nav-topo);
+   font-weight: bold;
+   padding: 6px 12px;
+   border-radius: 5px;
+   transition: all 0.5s;
+}
+#nav-topo a:hover{
+   background-color: var();
+   color: var(--color-nav-topo-hover);
+}
+#nav-topo a:active{
+   background-color: #10b981;
+   color: var(--color-nav-topo-hover);
+}
+/*conteúdo principal*/
+#container{
+   display: flex;
+   gap: 20px;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin-top: 20px;
+}
+.box-flex{
+   border: 1px solid var(--color-primary);
+   padding: 20px;
+   border-radius: 5px;
+   background-color: var(--bg-card);
+   box-shadow: 0px 0px 4px var(--color-text-nav-footer);
+}
+.box-flex article{
+   padding-left: 20px;
+}
+.box-flex .data{
+   color: #f59e0b;
+}
+.box-flex .autor{
+   color: var(--color-success);
+}
+.box-flex .autor:hover{
+   text-decoration: underline;
+}
+.box-flex .mais{
+   float: right;
+   padding-right: 20px;
+   color: var(--color-primary);
+}
+.box-flex .mais:hover{
+   text-decoration: underline;
+}
+
+
+/*configurações gerais */
+h2{
+   padding: 20px;
+   color: var(--text-main);
+   font-family: var(--font-mono);
+}
+p{
+   padding: 20px;
+   text-align: justify;
+   line-height: 1.5em;
+}
+ul{
+   list-style: none;
+
+}
+a{
+   text-decoration: none;
+}
+/*navegação footer*/
+#nav-footer{
+   background-color: var(--bg-nav-footer);
+   border: var(--border-header);
+   margin-top: 20px;
+   border-radius: 5px;
+   padding: 20px;
+}
+#nav-footer ul{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+#nav-footer a{
+   color: var(--color-text-nav-footer);
+   padding: 8px 16px;
+   border-radius: 5px;
+}
+#nav-footer a:hover{
+   color:var(--color-warning);
+   background-color: var(--bg-main);
+}
+/*rodapé*/
+footer{
+   background-color: var(--bg-card);
+   border-radius: 5px;
+   display: flex;
+   gap: 20px;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   padding-top: 20px;
+   border-top: 2px solid var(--border-header);
+
+  
+}
+.botao a{
+   color: var(--color-warning);
+   padding: 8px 16px;
+   border-radius: 5px;
+   transition: all 0.3s;
+
+}
+.botao a:hover{
+   background-color: var(--color-warning);
+   color: var(--color-success);
+}
+footer p{
+   color: var(--color-warning);
+   
+}
+@media screen and (min-width:768px) {
+   #nav-topo{
+   width: 700px;
+   margin: 0 auto;
+   }
+   #nav-topo ul{
+   justify-content:flex-start;
+   
+   }
+   #container{
+   margin: 20px auto 0 auto;   
+   width: 700px;
+   }
+   #nav-footer{
+
+   margin: 20px auto 0 auto;   
+   width: 700px;
+   }
+   #nav-footer ul{
+      justify-content: flex-start;
+   }
+   
+}
+@media screen and (min-width:992px) {
+   #nav-topo{
+   width: 900px;
+   margin: 0 auto;
+   }
+   #nav-topo ul{
+   justify-content:flex-start;
+   
+   }
+   #container{
+   margin: 20px auto 0 auto;   
+   width: 850px;
+   }
+   #nav-footer{
+
+   margin: 20px auto 0 auto;   
+   width: 900px;
+   }
+   #nav-footer ul{
+      justify-content: flex-start;
+   }
+   
+}

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+:root {
+  /* --- Fundo e Ambiente --- */
+  --bg-deep-space: #030510;       /* Fundo principal da página (Body) */
+  --bg-night-sky: #091a3c;        /* Seções e blocos de conteúdo */
+  --bg-midnight-blue: #132a5c;     /* Cards, caixas de destaque e barras */
+
+  /* --- Luzes da Cidade e Elementos Primários --- */
+  --city-neon-blue: #00d2ff;      /* Botões principais, links ativos e ícones */
+  --city-neon-purple: #9c27b0;    /* Detalhes secundários, bordas de destaque e badges */
+  --city-cyan-accent: #33eaff;    /* Linhas divisórias, hover de botões e subtítulos */
+
+  /* --- Contrastes e Destaques Quentes --- */
+  --highlight-starlight: #ffffff; /* Texto principal do site para alta legibilidade */
+  --highlight-warm-amber: #ffca28;/* Avisos, chamadas para ação (CTA) e preços */
+
+  /* --- Reflexos e Água (Uso no Rodapé) --- */
+  --reflect-water-dark: #071020;  /* Fundo do rodapé (simulando a água do lago) */
+  --reflect-blue-soft: rgba(0, 210, 255, 0.5);  /* Transparências e efeitos de brilho em azul */
+  --reflect-purple-soft: rgba(156, 39, 176, 0.5);/* Transparências e efeitos de brilho em roxo */
+
+  /* --- Font Principali --- */
+  --font-title: 'Orbitron', sans-serif;   /* O 'Rajdhani' */
+  --font-body: 'Inter', sans-serif;       /* Per i testi lunghi */
+}
+
+*{
+   margin: 0;
+   padding: o;
+   box-sizing: border-box;
+}
+body{
+   background: var(--bg-deep-space) url(../img/bg18.jpg) no-repeat center fixed;
+   background-size: cover;
+   font-size: 1em;
+   font-family: var(--font-body);
+}
+header{
+   padding: 40px;
+   text-align: center;
+   color: var(--highlight-starlight);
+}
+header h1{
+   font-family: var(--font-title);
+   margin-bottom: 10px;
+   text-shadow: 1px 2px 3px  var(--city-neon-purple);
+}
+header p{
+   font-size: 0.8em;
+   font-style: italic;
+   text-shadow: 1px 2px 3px  var(--city-neon-purple);
+}
+#container{
+   margin: 20px;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   align-content: center;
+}
+.box-grid{
+   border: 1px solid var(--city-neon-blue);
+   border-radius: 8px;
+   box-shadow: 0px 0px 0px 1px var(--city-neon-purple);
+   padding: 20px;
+   display: flex;
+   gap: 20px;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   transition: all 0.9s;
+}
+.box-grid:hover{
+   box-shadow: 0px 0px 0px 3px var(--city-neon-purple);
+}
+.box-grid h3{
+   text-align: center;
+   color:var(--highlight-starlight);
+   font-family: var(--font-title);
+  
+
+}
+.box-grid p{
+   text-align: center;
+   font-size: 1em;
+   color: var(--highlight-starlight);
+   
+}
+.box-grid .preco{
+   color:var(--city-cyan-accent);
+  
+}
+.btn{
+   padding: 10px;
+   background-color: var(--city-neon-purple);
+   color: var(--city-neon-blue);
+   font-weight: bold;
+   border: none;
+   border-radius: 5px;
+   transition: all 0.3s;
+
+   
+}
+.btn:hover{
+   background-color: var(--city-neon-blue);
+   color: var(--city-neon-purple);
+}
+.btn:active{
+   background-color: #ffca28;
+   color: #ffffff;
+   border: 1px solid var(--highlight-starlight);
+}
+footer{
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.botao a{
+   text-decoration: none;
+   color: var(--highlight-starlight);
+   padding: 10px 20px;
+   border-radius: 8px;
+   transition: all 0.3s;
+}
+.botao a:hover{
+   background-color: var(--city-neon-purple);
+   color: var(--city-cyan-accent);
+}
+footer p{
+   color: #ffffff;
+   padding: 10px;
+}
+@media screen and (min-width:768px) {
+   #container{
+      grid-template-columns: repeat(2, 1fr);
+   }
+   
+}
+@media screen and (min-width:992px) {
+   #container{
+      margin: 0 auto;
+      max-width: 900px;
+      grid-template-columns: repeat(3, 1fr);
+   }
+   
+}

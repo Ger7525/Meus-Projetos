@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+:root {
+  --primary-dark-shadow: #08101C; /* Fundo geral do body / Imersão noturna */
+  --primary-charcoal: #1D2628;    /* Fundos de cards e blocos de conteúdo */
+  --secondary-midnight: #3C4D6B;  /* Bordas, divisores e menus suspensos */
+  --accent-starlight: #6E7C97;    /* Textos do corpo e ícones secundários */
+  --accent-house-gold: #D1A55D;   /* Botões, CTAs, títulos e destaques */
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+}
+body{
+   color: var(--accent-starlight);
+   font-family: var(--font-body);
+   background-color: var(--primary-dark-shadow);
+}
+header{
+   background: url(../img/bg-022-header.jpg) no-repeat center;
+   background-size: cover;
+   padding:30px;
+   text-align: center;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   align-content: center;
+
+}
+header #logo h2{
+  text-shadow: 0px 1px 2px white;
+  transform: skew(-10deg) rotate(-5deg);
+  cursor: pointer;
+  transition: all 1s ease;
+}
+header #logo h2:hover{
+  
+   font-size: 1em;
+   text-shadow: 1px 2px 3px var(--accent-house-gold);
+   
+
+}

@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+
+:root {
+  /* --- Cores Principais / Estruturais --- */
+  --header-bg: #102142;        /* Deep Midnight Blue - Ideal para Header e Footer */
+  --footer-bg: #102142;        /* Deep Midnight Blue */
+  --text-primary: #FFFFFF;     /* Cirrus White - Para textos sobre o azul escuro */
+  
+  /* --- Cores Complementares e Destaques (Extraídas da imagem) --- */
+  --ocean-blue: #006FB4;       /* Azure Wave - Tom vibrante do mar */
+  --sky-blue: #95CFF5;         /* Sky Blue - Tom claro do céu */
+  --accent-warm: #D2B48C;      /* Warm Sand - Tom quente de contraste/detalhes */
+  --sail-gray: #B5BFC7;        /* Weathered Sail - Tom neutro claro para bordas/cards */
+  
+  /* --- Variáveis de Texto Gerais --- */
+  --text-dark: #1A1A1A;        /* Para textos sobre fundo claro */
+  --bg-light: #F4F7F9;         /* Fundo levemente frio para seções claras */
+
+  
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: var(--font-body);
+   color: var(--text-primary);
+
+}
+header{
+   background-color: var(--header-bg);
+   padding: 30px;
+   text-align: center;
+   font-family: var(--font-heading);
+}
+nav{
+   background-color: var(--header-bg);
+   padding: 20px;
+
+}
+nav ul{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   
+}
+nav a{
+   color: var(--text-primary);
+   font-weight: bold;
+   padding: 10px ;
+   transition: all 0.3s;
+}
+nav a:hover{
+   background-color: white;
+  
+   color: var(--text-dark);
+}
+.primeiro{
+   background-color: white;
+   color: var(--header-bg);
+   padding: 10px;
+}
+/*configurações gerais*/
+ul{
+   list-style: none;
+   
+} 
+a{
+   text-decoration: none;
+   font-family: var(--font-heading);
+
+}
+p{
+   padding: 10px;
+   text-indent: 20px;
+   line-height: 2em;
+   
+}
+#container{
+   background: var(--bg-light)  no-repeat center fixed;
+   background-size: cover;
+   padding: 20px;
+}
+.box-texto{
+   border: 1px solid var(--accent-warm);
+   margin-bottom: 10px;
+}
+.box-texto p{
+   color: var(--text-dark);
+} 
+#listas{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 20px;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+   padding: 10px;
+}  
+.lista{
+   padding: 10px;
+   
+
+}
+.lista h3{
+   color: var(--text-dark);
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.405);
+   padding-bottom: 10px;
+}
+.lista ul{
+   display: flex;
+   gap: 10px;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: center;
+   align-content: center;
+}
+.lista a{
+   color:var(--ocean-blue);
+}
+.lista a:hover{
+   text-decoration: underline;
+}
+.lista a:active{
+   color: #006FB4;
+}
+footer{
+   background-color: var(--footer-bg);
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   flex-flow: column nowrap;
+   padding-top: 20px;
+}
+.botao a{
+   color: var(--text-primary);
+   font-weight: bold;
+   padding: 10px ;
+   transition: all 0.3s;
+}
+.botao a:hover{
+   background-color: white;
+  
+   color: var(--text-dark);
+}
+@media screen and (min-width:768px) {
+   nav ul{
+      margin: 0 auto;
+      justify-content: flex-start;
+      max-width: 800px;
+   }
+   .box-texto{
+      margin: 0 auto;
+      max-width:600px ;
+   }
+   #listas{
+      margin: 0 auto;
+      max-width: 600px;
+   }
+}
+@media screen and (min-width:992px) {
+   nav ul{
+      margin: 0 auto;
+      justify-content: flex-start;
+      max-width: 800px;
+   }
+   .box-texto{
+      margin: 0 auto;
+      max-width:700px ;
+   }
+   #listas{
+      margin: 0 auto;
+      max-width: 700px;
+      display: flex;
+      justify-content: space-between;
+   }
+   .lista ul{
+   display: block;
+    
+}
+}
+

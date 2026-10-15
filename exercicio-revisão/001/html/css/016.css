@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+:root {
+  /* --- Cores Base (Fundo e Texto Principal) --- */
+
+  /* Azul-preto do espaço profundo, para o fundo principal da página */
+  --bg-color-primary: #02040d;
+
+  /* Branco-azulado suave dos pontos estelares, para o texto principal, legível e não ofuscante */
+  --text-color-primary: #e6f0f3;
+
+  /* --- Cores de Destaque e Elementos --- */
+
+  /* Ouro profundo e brilhante do centro da Via Láctea. Ótimo para títulos, botões primários ou links. */
+  --accent-color-gold: #fcc258;
+
+  /* Roxo-rosa vibrante das nebulosas. Use para elementos que você quer que "saltem" ou para estados de foco (hover). */
+  --accent-color-nebula: #a24b9a;
+
+  /* Azul neon elétrico, das formações de gás. Perfeito para realces finos, bordas de cards ou ícones. */
+  --accent-color-cyan: #14c8d3;
+
+  /* --- Cores Secundárias e Contraste (Planeta) --- */
+
+  /* Bege-cinzento suave do planeta iluminado. Bom para fundos secundários (como cards), texto secundário ou elementos sutis. */
+  --bg-color-secondary: #d4cbb8;
+
+  /* Cinza-azulado profundo da sombra do planeta. Útil para bordas, separadores ou sombras de cards. */
+  --border-color-muted: #4e5a6a;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+  background-color: var(--bg-color-primary);
+  color: var(--text-color-primary);
+  font-family: 'Courier New', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+header{
+   padding: 30px;
+   text-align: center;
+    border-bottom: 1px solid var(--border-color-muted);
+   box-shadow: 0px 3px 5px  var(--border-color-muted);
+   
+}
+header h1{
+   margin-bottom: 20px;
+}
+#container{
+  
+   padding: 20px;
+   background: url(../img/bg-016.jpg) repeat center fixed;
+   background-size: cover;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   align-content: center;
+
+
+}
+.box-grid{
+   
+   padding: 20px;
+   text-align: center;
+   background-color: transparent;
+   border: 1px solid var(--border-color-muted);
+   border-radius: 5px;
+   box-shadow: 0px 3px 5px  var(--border-color-muted);
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.box-grid:hover{
+   background-color:#d4cbb82a;
+   transform: translateY(10px);
+   color: var(--accent-color-cyan);
+   border: 2px solid var(--accent-color-cyan);
+}
+.box-grid:active{
+   background-color: rgba(0, 255, 255, 0.116);
+   font-size: 1.3em;
+}
+footer{
+   padding: 30px;
+   text-align: center;
+  
+   border-top: 1px solid var(--border-color-muted);
+   box-shadow: 0px 3px 5px  var(--border-color-muted);
+
+}
+footer .botao{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+footer .botao a{
+   margin: 10px;
+   text-decoration: none;
+   color: var(--bg-color-primary);
+   font-weight: bold;
+   padding: 8px 16px;
+   background-color: var(--bg-color-secondary);
+   border: 1px solid var(--border-color-muted);
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+footer .botao a:hover{
+   background-color: var(--accent-color-gold);
+   color:var(--accent-color-cyan)
+}
+@media screen and (min-width:768px) {
+   body{
+      background: url(../img/bg-016.jpg) no-repeat center fixed;
+      background-size: cover;
+   }
+   #container{
+      grid-template-columns: repeat(2, 1fr);
+    }
+   
+}
+@media screen and (min-width:992px) {
+   body{
+      background: url(../img/bg-016.jpg) no-repeat center fixed;
+      background-size: cover;
+   }
+   header{
+      border-bottom: none;
+      box-shadow: none;
+   }
+   #container{
+      margin: 0 auto;
+      max-width: 800px;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .box-grid h2{
+      font-size: 0.9em;
+    }
+    .box-grid p{
+      font-size: 0.8em;
+    }
+   footer{
+      border-top: none;
+      box-shadow: none;
+
+   } 
+   
+}

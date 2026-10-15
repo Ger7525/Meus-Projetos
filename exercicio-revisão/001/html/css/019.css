@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+
+:root {
+/* --- Cores de Fundo / Base (Inspiradas no Céu e Oceano Noturno) --- */
+--bg-dark-primary: #0b0f19;      /* Azul noite muito escuro para fundos principais */
+--bg-dark-secondary: #161c2e;    /* Azul marinho profundo para cards e seções */
+--bg-dark-translucent: rgba(11, 15, 25, 0.85); /* Fundo translúcido para leitura sobre imagens */
+
+/* --- Cores de Texto (Inspiradas no Luar e Estrelas) --- */
+--text-primary: #f8fafc;         /* Branco levemente prateado (máxima legibilidade) */
+--text-secondary: #cbd5e1;       /* Cinza claro para textos secundários e subtítulos */
+--text-muted: #94a3b8;           /* Cinza suave para legendas ou rodapés */
+
+/* --- Cores de Destaque / Ação (Inspiradas na Lava e Fogo) --- */
+--accent-lava-bright: #ff5500;   /* Laranja vibrante para botões principais, chamadas de ação e links */
+--accent-lava-glow: #ff8800;     /* Laranja dourado para estados de hover/foco */
+--accent-magma-red: #d92626;     /* Vermelho vulcânico para avisos ou destaques fortes */
+
+/* --- Cores de Acento Secundário (Inspiradas na Lua) --- */
+--accent-moon-gold: #fde047;     /* Dourado claro/Luar para detalhes especiais ou badges */
+--accent-moon-glow: rgba(253, 224, 71, 0.2); /* Brilho de luar para bordas e sombras */
+
+/* --- Bordas e Divisores --- */
+--border-color: rgba(255, 255, 255, 0.1);
+--border-lava: rgba(255, 85, 0, 0.4);
+
+--font-heading: 'Montserrat', sans-serif;
+--font-body: 'Inter', sans-serif;
+}
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+body{
+   background: var(--bg-dark-primary) url(../img/bg-19.jpg) no-repeat center fixed;
+   background-size: cover;
+   font-family: var(--font-body);
+   font-size: 1em;
+   color: var(--text-primary);
+}
+header{
+   padding: 30px;
+   text-align: center;
+   font-family: var(--font-heading);
+}
+nav ul{
+   display: flex;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   background-color: #ff880018;
+   margin: 20px 10px;
+   border-radius: 5px;
+   padding: 10px;
+}
+a{
+   text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+p{
+   text-align: justify;
+   text-indent: 20px;
+   padding:10px;
+
+
+}
+nav a{
+  
+   color: var(--text-muted);
+   font-weight: bold;
+   padding: 5px 10px;
+   transition: all 0.3s;
+}
+nav a:hover{
+   background-color: var(--accent-lava-glow);
+   border-radius: 3px;
+   color: var(--accent-magma-red);
+
+}
+nav a:active{
+   padding: 2px 5px;
+   font-size: 0.8em;
+   border: 1px solid var(--accent-magma-red);
+   color: #f8fafc;
+}
+#container{
+    margin: 0 40px;
+}
+.box{
+   border: 1px solid var(--border-lava);
+   box-shadow: 0p 0px 3px var(--border-color);
+}
+footer{
+   display: flex;
+   gap: 20px;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin-top: 20px;
+}
+.botao a{
+   color: var(--text-muted);
+   font-weight: bold;
+   padding: 5px 10px;
+   transition: all 0.3s;
+}
+.botao a:hover{
+   background-color: var(--accent-lava-glow);
+   border-radius: 3px;
+   color: var(--accent-magma-red);
+
+}
+.botao a:active{
+   padding: 2px 5px;
+   font-size: 0.8em;
+   border: 1px solid var(--accent-magma-red);
+   color: #f8fafc;
+}
+@media screen and (min-width:768px) {
+   nav{
+      margin: 0 auto;
+      max-width: 800px;
+   }
+   #container{
+      margin: 0 auto;
+      width: 600px;
+   }
+   
+}
+   
+
+
