@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+:root {
+  /* =========================================
+     PALETA DE CORES (MODO CLARO)
+     ========================================= */
+  
+  /* Cores Principais / Primárias */
+  --cor-primaria: #1a202c;        /* Azul escuro/Chumbo - Usado em cabeçalhos e elementos principais */
+  --cor-primaria-hover: #2d3748;  /* Tom de hover para a cor primária */
+  
+  /* Cores de Destaque / Ação */
+  --cor-destaque: #e53e3e;        /* Vermelho vivo - Para notícias de última hora, badges "Urgente" ou 'Breaking News' */
+  --cor-secundaria: #2b6cb0;      /* Azul intermediário - Para links, categorias e botões secundários */
+  --cor-secundaria-hover: #2c5282;/* Tom de hover para links e botões */
+
+  /* Neutros e Tipografia */
+  --cor-texto-principal: #2d3748; /* Cinza escuro profundo - Alta legibilidade para leitura de artigos */
+  --cor-texto-suave: #718096;     /* Cinza médio - Para metadados (data, autor, tempo de leitura) */
+  --cor-texto-inverso: #ffffff;   /* Branco - Para textos sobre fundos escuros */
+
+  /* Superfícies e Fundos */
+  --cor-fundo-pagina: #f7fafc;    /* Off-white suave - Descansa a vista durante a leitura */
+  --cor-fundo-card: #ffffff;      /* Branco puro - Para cards de notícias e seções destacadas */
+  --cor-borda: #e2e8f0;           /* Cinza claro - Divisores discretos entre notícias */
+
+  /* Estados e Alertas */
+  --cor-sucesso: #38a169;         /* Verde para confirmações ou tags positivas */
+  --cor-alerta: #dd6b20;          /* Laranja para avisos e análises */
+
+  /* =========================================
+     FAMÍLIAS DE FONTES (TIPOGRAFIA)
+     ========================================= */
+  
+  /* Fonte para Títulos (Headings): Serifada moderna para autoridade e tom jornalístico */
+  --fonte-titulos: 'Merriweather', 'Georgia', 'Times New Roman', serif;
+
+  /* Fonte para Corpo de Texto (Body): Sans-serif limpa para máxima legibilidade digital */
+  --fonte-corpo: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Fonte de Apoio: Sans-serif condensada/firme para menus, tags e metadados */
+  --fonte-apoio: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--cor-fundo-pagina);
+   color: var(--cor-texto-principal);
+   line-height: 1.8em;
+   font-size: 1em;
+
+}
+header{
+   text-align: center;
+   padding: 20px;
+}
+header #logo{
+   margin: 0 auto;
+   background-color: var(--cor-fundo-pagina);
+   color: #2c5282;
+   border: 1px solid var(--cor-borda);
+   box-shadow: 1px 1px 3px var(--cor-alerta);
+   width: 150px;
+   margin-bottom: 20px;
+   transform: skew(-5deg) rotate(-5deg);
+   cursor: pointer;
+   transition: all 0.3s;
+}
+header #logo:hover{
+    
+     box-shadow: 2px 3px 7px var(--cor-alerta);
+     color: var(--cor-alerta);
+    
+
+}
+header h1 {
+   margin-bottom: 20px;
+}
+
+header p{
+   font-style: italic;
+}
+#nav-topo{
+   background-color: var(--cor-alerta);
+   padding: 20px;
+}
+#nav-topo ul{
+   display: flex;
+   gap: 10px;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   
+}
+#nav-topo a{
+   color: var(--cor-secundaria);
+   padding: 0.5em;
+   font-weight: bold;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+#nav-topo a:hover{
+   background-color: var(--cor-secundaria);
+   color: #dd6b20;
+}
+/*Configurações gerais*/
+h2,{
+   color: var(--cor-sucesso);
+   font-family: var(--fonte-titulos);
+   padding: 20px;
+}
+ul, a{
+   list-style: none;
+   text-decoration: none;
+}
+#destaque{
+   background-color: var(--cor-secundaria);
+   color: var(--cor-alerta);
+}
+#container{
+   margin: 20px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+#container-left{
+   
+   display:flex;
+   gap: 20px;
+   flex-flow: row wrap;
+   justify-content: center;
+   
+   
+  
+   
+}
+.box-left{
+   width:100%;
+   border: 1px solid var(--cor-borda);
+   border-radius: 5px;
+   background-color: var(--cor-fundo-card);
+   box-shadow: 1px 2px 3px var(--cor-alerta);
+   padding: 20px;
+}
+.box-left ul{
+   display: flex;
+   gap: 10px;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-content: center;
+  
+}
+.box-left ul li{
+   transition: all 0.3s;
+}
+.box-left ul li:hover{
+   background-color: var(--cor-texto-suave);
+   border-radius: 5px;
+   transform: translate(-5px);
+  
+}
+.box-left a{
+  color: var(--cor-texto-suave);
+  padding: 10px;
+  font-weight: bold;
+  transition: all 0.3s;
+  
+
+}
+.box-left a:hover{
+    color: var(--cor-fundo-pagina);
+
+
+}
+
+.box-left h3{
+   color: var(--cor-alerta);
+    border-bottom: 1px solid var(--cor-alerta);
+    margin-bottom: 20px;
+   padding: 10px;
+}
+.box-left p{
+   padding: 0 10px;
+   color: var(--cor-texto-suave);
+}
+#central{
+   display:flex;
+   gap: 20px;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+.box-central{
+   
+   border: 1px solid var(--cor-borda);
+   border-radius: 5px;
+   background-color: var(--cor-fundo-card);
+   box-shadow: 1px 2px 3px var(--cor-alerta);
+   padding: 20px;
+   transition: all 0.3s;
+
+}
+.box-central:hover{
+   
+    box-shadow: 0px 1px 5px 2px  var(--cor-alerta);
+    transform:  translatey(-5px); 
+   
+
+} 
+.box-central h2{
+   font-family: var(--fonte-titulos);
+   font-size: 1.3em;
+   padding: 20px 0;
+   
+}
+
+.box-central .data{
+   background-color:#e59865;
+   border-radius: 5px;
+   display: flex;
+   gap: 10px;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   margin-bottom: 10px;
+   
+}
+.data span{
+   font-size: 0.6em;
+   color: var(--cor-secundaria-hover);
+   font-style: italic;
+}
+.data a{
+   font-size: 0.9em;
+   color: var(--cor-secundaria-hover);
+}
+.data a:hover{
+   text-decoration: underline;
+}
+#container-right{
+    display:flex;
+   gap: 20px;
+   flex-flow: row wrap;
+   justify-content: center;
+}
+.box-right{
+   width: 430px;
+   border: 1px solid var(--cor-borda);
+   border-radius: 5px;
+   background-color: var(--cor-fundo-card);
+   box-shadow: 1px 2px 3px var(--cor-alerta);
+   padding: 20px;
+}
+.box-right h3{
+   color: var(--cor-alerta);
+   text-align: center;
+   padding: 10px;
+   border-bottom: 1px solid var(--cor-alerta);
+   margin-bottom: 20px;
+   font-family: var(--fonte-titulos);
+}
+.box-right #menu-right{
+   display: flex;
+   gap: 10px;
+   flex-flow: row wrap;
+   justify-content: flex-start;
+   align-items: flex-start;
+   align-content: flex-start;
+}
+#menu-right a{
+   padding: 6px 16px;
+   color: #dd6b20;
+   background-color: #dd6c203a;
+   border-radius: 15px;
+   transition: all 0.6s;
+}
+#menu-right a:hover{
+   background-color: #dd6b20;
+   color:  white;
+}
+.box-right p{
+   color: var(--cor-texto-suave);
+   padding: 10px;
+}
+.box-right #formulario{
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+#formulario input{
+   width: 100%;
+   padding: 10px;
+   border: 1px solid var(--cor-alerta);
+   border-radius: 5px;
+}
+#formulario button{
+   border: none;
+   border-radius: 5px;
+   padding: 10px;
+   width: 100%;
+   background-color: var(--cor-alerta);
+   color: white;
+   font-weight: bold;
+   transition: all 0.5s;
+}
+#formulario button:hover{
+   background-color: var(--cor-sucesso);
+}
+footer{
+   display: flex;
+   gap: 20px;
+   flex-flow: column nowrap;
+   justify-content:center ;
+   align-items: center;
+   align-content: center;
+   padding: 30px;
+   margin-top: 20px;
+   border-top: 1px solid var(--cor-alerta);
+}
+#nav-footer ul{
+   display: flex;
+   gap:10px;
+   flex-flow: row wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}
+#nav-footer a, .botao a{
+   color: var(--cor-alerta);
+   padding: 10px;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+#nav-footer a:hover, .botao a:hover{
+   background-color: var(--cor-alerta);
+   color: white;
+   transition: all 0.3s;
+}
+@media screen and (min-width:768px){
+   #logo{
+      position: absolute;
+      top: 10px;
+      left: 20px;
+   }
+   #container{
+    grid-template-columns: 1fr 3fr 1fr ;
+    justify-items: flex-start;
+    align-items: start;
+   } 
+   
+  
+   
+}
