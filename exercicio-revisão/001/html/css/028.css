@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  /* ==========================================================================
+     PALETA DE CORES PRINCIPAL - MÓVEIS RESIDENCIAIS
+     ========================================================================== */
+
+  /* --- Tons de Preto / Escuros (Estrutura, Textos Principais e Fundo Dark) --- */
+  --preto-puro: #000000;          /* Usado para contrastes absolutos */
+  --preto-profundo: #121212;      /* Fundo escuro principal e cabeçalhos */
+  --preto-suave: #1e1e1e;         /* Cards escuros, menus e rodapé */
+  --grafite-escuro: #2a2a2a;      /* Bordas de elementos escuros e divisores */
+  --grafite-medio: #4a4a4a;       /* Textos secundários sobre fundo claro */
+
+  /* --- Tons de Dourado (Destaques, Ações, Detalhes e Badges de Luxo) --- */
+  --dourado-principal: #d4af37;   /* Cor de destaque principal e botões de ação (CTA) */
+  --dourado-claro: #f3e5ab;       /* Hovers sutis e fundos de destaque */
+  --dourado-vibrante: #e5b80b;    /* Hover de botões principais e elementos ativos */
+  --dourado-fechado: #aa820a;     /* Texto dourado sobre fundo claro (melhor contraste) */
+  --dourado-bronze: #8c6d1f;      /* Bordas elegantes e detalhes secundários */
+
+  /* --- Tons de Branco / Neutros Claros (Fundos, Espaços e Superfícies) --- */
+  --branco-puro: #ffffff;         /* Fundo de cards, containers e texto sobre escuro */
+  --branco-neve: #fcfcfc;         /* Fundo geral da página */
+  --cinza-ultra-claro: #f4f4f5;   /* Fundo de seções alternadas e inputs */
+  --cinza-claro: #e4e4e7;         /* Bordas sutis e divisores em temas claros */
+  --cinza-medio: #a1a1aa;         /* Ícones desativados e textos de apoio */
+
+  /* ==========================================================================
+     Cores de Feedback e Status
+     ========================================================================== */
+  --sucesso: #2e7d32;             /* Status de produto em estoque / confirmações */
+  --alerta: #ed6c02;              /* Poucas unidades no estoque */
+  --erro: #d32f2f;                /* Erros de formulário / produto esgotado */
+
+  /* ==========================================================================
+     Aplicações Semânticas Recomendadas
+     ========================================================================== */
+  --fundo-pagina: var(--branco-neve);
+  --fundo-secao-alt: var(--cinza-ultra-claro);
+  --texto-principal: var(--preto-profundo);
+  --texto-secundario: var(--grafite-medio);
+  --cor-destaque: var(--dourado-principal);
+  --cor-hover-destaque: var(--dourado-vibrante);
+  --borda-suave: var(--cinza-claro);
+
+  /* Fonte Principal: Títulos, Destaques e Nomes de Coleções */
+  --fonte-titulo-principal: 'Cormorant Garamond', Georgia, serif;
+
+  /* Fonte Secundária: Subtítulos, Categorias, Menus e Botões */
+  --fonte-secundaria: 'Montserrat', system-ui, -apple-system, sans-serif;
+
+  /* Fonte do Corpo: Parágrafos, Descrições e Ficha Técnica */
+  --fonte-paragrafo: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--dourado-claro);
+   color: var(--preto-profundo);
+   font-size: 1em;
+   font-family: var(--fonte-paragrafo);
+}
+/*cabeçalho*/
+header{
+   padding: 20px 0;
+}
+header h1{
+   text-align: left;
+   padding-left: 20px;
+   color: var(--dourado-bronze);
+   font-family: var(--fonte-titulo-principal);
+   font-size: 2.71em;
+   text-shadow: 1px 1px 1px black;
+}
+/*final do cabeçalho*/
+
+/*menu*/
+#nav-menu{
+   background-color: var(--dourado-fechado);
+   border: 1px solid var(--preto-profundo);
+   margin-bottom: 20px;
+   padding: 30px 20px;
+}
+#nav-menu ul{
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   flex-flow: row wrap;
+   justify-content:center;
+   align-items: center;
+   align-content: center;
+}
+#nav-menu a{
+   text-decoration: none;
+   color: var(--preto-profundo);
+   font-family: var(--fonte-secundaria);
+   padding: 5px;
+   flex:auto;
+   transition: all 0.3s ease;
+}
+#nav-menu a:hover{
+   background-color: var(--preto-profundo);
+   color: var(--dourado-fechado);
+   border-radius: 5px;
+}
+#nav-menu .destaque{
+   background-color: var(--preto-profundo);
+   color: var(--dourado-fechado);
+   border-radius: 5px;
+}
+/*final do menu*/

@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+PALETA DE CORES PÚRPURA - VARIÁVEIS CSS (:ROOT)
+========================================================================== */
+
+:root {
+/* ------------------------------------------------------------------------
+1. MARCA E DESTAQUES (IDENTIDADE VISUAL)
+------------------------------------------------------------------------ /
+/ Cor principal: Usar em botões primários, destaques e elementos principais */
+--purpura-principal: #6c5ce7;
+
+/* Roxo claro: Usar no estado :hover de botões e elementos interativos */
+--purpura-hover: #8173e8;
+
+/* Roxo escuro: Usar no estado :active (clique) e títulos destacados */
+--purpura-escuro: #5140cc;
+
+/* Acento/Secundário: Usar em tags, badges, ícones e detalhes decorativos */
+--purpura-acento: #a29bfe;
+
+/* Roxo muito suave: Usar em fundos de cards selecionados ou destaques leves */
+--purpura-suave: #f3f0ff;
+
+/* ------------------------------------------------------------------------
+2. FUNDOS E SUPERFÍCIES (ESTRUTURA)
+------------------------------------------------------------------------ /
+/ Fundo da página (background geral do site/app) */
+--fundo-pagina: #f8f7fc;
+
+/* Fundo de superfícies (cards, modais, cabeçalhos, menus) */
+--fundo-superficie: #ffffff;
+
+/* Fundo secundário (sidebars, campos de busca, blocos de código) */
+--fundo-secundario: #f0edfa;
+
+/* ------------------------------------------------------------------------
+3. TIPOGRAFIA E TEXTOS
+------------------------------------------------------------------------ /
+/ Texto principal: Títulos e corpo de texto (alto contraste) */
+--texto-principal: #1e1a34;
+
+/* Texto secundário: Subtítulos, legendas e descrições */
+--texto-secundario: #5c5577;
+
+/* Texto suave: Placeholders, textos desabilitados e datas */
+--texto-suave: #9e97b8;
+
+/* Texto claro: Para ser usado sobre botões ou fundos escuros */
+--texto-sobre-escuro: #ffffff;
+
+/* ------------------------------------------------------------------------
+4. BORDAS E DIVISORES
+------------------------------------------------------------------------ /
+/ Borda suave: Linhas divisórias, bordas de cards e tabelas */
+--borda-suave: #e4e0f2;
+
+/* Borda de foco: Destaque ao clicar em inputs/campos de formulário */
+--borda-foco: #6c5ce7;
+
+/* ------------------------------------------------------------------------
+5. ESTADOS DE FEEDBACK (SISTEMA DE NOTIFICAÇÃO)
+------------------------------------------------------------------------ /
+/ Sucesso */
+--sucesso: #00b894;
+--sucesso-fundo: #e6f9f5;
+
+/* Alerta */
+--alerta: #fdcb6e;
+--alerta-fundo: #fff9ec;
+
+/* Erro */
+--erro: #d63031;
+--erro-fundo: #fdeaea;
+
+/* Informação */
+--informacao: #0984e3;
+--informacao-fundo: #e8f4fc;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.8em;
+   background-color: var(--fundo-pagina);
+   color: var(--texto-principal);
+   padding: 20px;
+
+}
+header{
+   background-color: var(--informacao);
+   padding: 30px;
+   text-align: center;
+   border-radius: 5px;
+   margin-bottom: 20px;
+
+}
+header p{
+   font-style: italic;
+}

@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+:root {
+/* --- CORES PRINCIPAIS (BRANDING) --- /
+/ Laranja Principal: Usado para elementos de destaque, botões primários e links */
+--cor-laranja-principal: #ff6b00;
+
+/* Laranja Secundário / Hover: Variação para estados de interatividade (passar o mouse) */
+--cor-laranja-hover: #e05e00;
+
+/* Dourado: Usado para detalhes de destaque, ícones de luxo/sucesso, bordas ou acentos */
+--cor-dourado-principal: #d4af37;
+
+/* Dourado Suave: Versão mais suave para fundos de elementos especiais ou cards de destaque */
+--cor-dourado-suave: #f3e5ab;
+
+/* --- CORES NEUTRAS E DE FUNDO --- /
+/ Branco Puro: Usado para fundos limpos, cards e textos em superfícies escuras */
+--cor-branco: #ffffff;
+
+/* Branco Off-White: Excelente para fundos alternativos para diminuir o cansaço visual */
+--cor-branco-suave: #f9f9fb;
+
+/* --- ESCALA DE CINZAS --- /
+/ Cinza Claro: Usado para superfícies, fundos secundários e cartões */
+--cor-cinza-claro: #f0f2f5;
+
+/* Cinza Médio Claro: Ideal para bordas, divisores e linhas estruturais */
+--cor-cinza-borda: #dcdfe6;
+
+/* Cinza Médio: Usado para textos secundários, legendas e ícones neutros */
+--cor-cinza-texto-secundario: #6c757d;
+
+/* Cinza Escuro: Cor principal para o texto do corpo da página (melhor legibilidade que o preto puro) */
+--cor-cinza-texto: #212529;
+
+/* Cinza Grafite: Usado para rodapés, menus escuros ou fundos com contraste */
+--cor-cinza-grafite: #1a1d20;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background-color: var(--cor-cinza-claro);
+   color: var(--cor-cinza-texto);
+   font-size: 1em;
+   line-height: 1.8em;
+}
+header{
+   background-color: var(--cor-laranja-principal);
+   padding:30px 0 30px 0;
+   display: flex;
+   gap: 20px;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   border-bottom: 2px solid var(--cor-cinza-borda);
+}
+header #texto-header{
+   flex: 2 1 auto;
+}
+header #texto-header h1{
+   color:var(--cor-cinza-texto-secundario);
+   text-shadow: 1px 1px 2px white;
+}
+header #menu-header ul{
+   list-style: none;
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+   align-items: center;
+
+}
+header #menu-header a{
+   text-decoration: none;
+   color: white;
+   flex: 1 1 auto;
+   padding: 6px 12px;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+header #menu-header a:hover{
+   background-color: var(--cor-laranja-hover);
+}
+#container{
+   margin-top: 20px;
+}
+#box-1{
+   background-color: #f3e5ab;
+   margin: 0 20px;
+   border-radius: 5px;
+   border: 1px solid var(--cor-cinza-borda);
+   padding: 10px;
+   text-align: center;
+}
+#box-1 h1{
+   padding: 20px;
+   color: var(--cor-laranja-principal);
+   text-shadow: 1px 1px 1px var(--cor-cinza-borda);
+   font-size: 1.5em;
+   font-family: Arial, Helvetica, sans-serif;
+}
+#box-1 p{
+   font-size: 0.9em;
+   padding: 20px;
+}
+#box-1 button{
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: var(--cor-laranja-principal);
+   color: white;
+   font-weight: bold;
+   margin-bottom: 20px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+#box-1 button:hover{
+   background-color: var(--cor-laranja-hover);
+}
+#box-2{
+   margin: 20px;
+   display: flex;
+   gap: 20px;
+   flex-flow: row wrap;
+   justify-content: center;
+   justify-items: center;
+}
+#box-2 .box-recurso{
+   border: 1px solid var(--cor-cinza-borda);
+   background-color:white;
+   border-radius: 5px;
+   padding: 20px;
+   color: var(--cor-laranja-principal);
+}
+#box-2 .box-recurso h3{
+   padding: 10px;
+}
+#box-2 .box-recurso p{
+   color: var(--cor-cinza-texto-secundario);
+   padding: 10px;
+}
+#box-2 .box-recurso button{
+   padding: 15px 25px;
+   border: none;
+   background-color: white;
+   border:1px solid #ff6b00;
+   color:var(--cor-laranja-principal);
+   margin: 20px;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+#box-2 .box-recurso button:hover{
+   background-color: var(--cor-laranja-principal);
+   color: white;
+}
+#box-2 .premium {
+   background-color: #e05d0097;
+   color: white;
+}
+#box-2 .premium p{
+   color: var(--cor-branco);
+   padding: 10px;
+}
+#box-2 .premium button{
+   padding: 15px 25px;
+   border: none;
+   background-color: #ff6b00;
+   color: white;
+   margin: 20px;
+   border-radius: 5px;
+   transition: all 0.3s;
+}
+#box-2 .premium button:hover{
+   background-color: #d46210;
+}
+#container-grid{
+   display: grid;
+   gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+   justify-content: flex-start;
+   align-items: flex-start;
+   align-content: center;
+   
+}
+#principal{
+ background-color: var(--cor-branco);
+ margin: 0 20px;
+ border-radius: 5px;
+ padding: 20px;
+}
+#principal h2 {
+   padding: 20px;
+   color: var(--cor-cinza-grafite);
+}
+#principal p{
+   font-size: 0.9em;
+   text-align: justify;
+   padding: 10px;
+
+}
+#principal #principal-flex{
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(1, 1fr);
+
+   
+   
+}
+.box-flex{
+   border: 1px solid var(--cor-cinza-borda);
+   padding: 20px;
+   background-color: var(--cor-dourado-suave);
+   flex-basis: 200px;
+   border-radius: 5px;
+}
+.box-flex a{
+   text-decoration: none;
+   color: white;
+   background-color: var(--cor-laranja-principal);
+   padding: 6px 12px;
+   border-radius: 5px;
+}
+#container-right{
+   margin: 0 20px;
+   display: flex;
+   gap: 20px;
+   flex-flow: column wrap;
+   justify-content: center;
+   
+   
+}
+.box-right{
+   background-color: white;
+   border: 1px solid var(--cor-cinza-borda);
+   border-radius: 5px;
+   padding: 20px;
+}
+.box-right h3{
+   padding: 20px;
+
+}
+.box-right p{
+   padding: 20px;
+   text-align: left;
+}
+.box-right input{
+   padding: 10px;
+   border: 1px solid var(--cor-cinza-borda);
+   margin: 20px 0 0 20px;
+   width: 90%;
+}
+.box-right button{
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   background-color: var(--cor-laranja-principal);
+   color: white;
+   font-weight: bold;
+   margin: 10px 0 0 20px;
+   cursor: pointer;
+   transition: all 0.3s;
+}
+.box-right ul, .box-right a{
+   text-decoration: none;
+   list-style: none;
+   padding: 10px;
+   color: var(--cor-laranja-principal);
+   transition: all 0.3s;
+}
+.box-right a:hover{
+   text-decoration: underline;
+}
+footer{
+   margin: 20px;
+   display: flex;
+   gap: 20px;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: left;
+}
+footer h4{
+   color: var(--cor-laranja-principal);
+   padding: 20px;
+}
+footer p{
+   padding: 20px;
+}
+footer ul{
+   list-style: none;
+   padding: 20px;
+}
+footer a{
+   text-decoration: none;
+   color: var(--cor-laranja-principal);
+   transition: all 0.3s;
+}
+footer a:hover{
+   text-decoration: underline;
+}
+@media screen and (min-width:768px) {
+   header{
+      flex-flow: row wrap;
+      justify-content: space-between;
+      
+      
+      
+   }
+   #menu-header a{
+      font-size: 1.3em;
+   }
+   header #texto-header h1{
+      font-size: 2.3em;
+      margin-left: 10px;
+   }
+   #container-grid{
+   display: grid;
+   gap: 20px;
+   grid-template-columns: 60% 1fr;
+   
+   
+   }
+    #box-2 .box-recurso{
+     width: 48%;
+   }
+   footer{
+     
+      flex-flow: row wrap;
+      justify-content: space-around;
+      
+   }
+}
+@media screen and (min-width:992px) {
+   header{
+      justify-content: space-around;
+   }
+   #container{
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+   #box-2{
+      justify-content: space-between;
+   }
+   #box-2 .box-recurso{
+     width: 32%;
+   }
+   
+   #container-grid{
+   display: grid;
+   gap: 20px;
+   grid-template-columns: 70% 1fr;
+
+   }
+   #principal #principal-flex{
+   
+   grid-template-columns: repeat(3, 1fr);
+   }
+   
+  
+}
+   
+   
+
+
+
+
